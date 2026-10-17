@@ -1,48 +1,33 @@
-[README.md](https://github.com/user-attachments/files/23595774/README.md)
-# Rede de Ações Municipais
+# Alto Tietê em Rede
 
-Landing page estática desenvolvida para divulgar projetos sociais, campanhas de vacinação e ações de solidariedade das prefeituras de São Paulo. O objetivo é oferecer um painel único, atualizado e acessível para que cidadãos conheçam iniciativas em andamento, consultem eventos futuros e recebam convites personalizados.
+Página informativa estática sobre campanhas de saúde, vacinação e serviços públicos nos dez municípios do Alto Tietê. As notícias e orientações em destaque são acompanhadas de links para as prefeituras e órgãos oficiais.
 
-## Funcionalidades
+## Municípios e informações consultadas
 
-- **Sessão Hero**: resumo dos números de impacto e chamadas para ações em destaque.
-- **Filtro de Ações**: cartões dinâmicos por categoria (projetos sociais, saúde, solidariedade) renderizados via JavaScript.
-- **Agenda**: linha do tempo com próximos eventos presenciais nas subprefeituras.
-- **Campanha do Agasalho**: destaque institucional com dados de arrecadação e pontos de coleta.
-- **Newsletter**: formulário com feedback em tempo real para cadastro de e-mails.
-- **Modal de Preferências**: permite selecionar temas de interesse e informar o bairro para receber notificações segmentadas.
+- **Arujá:** evento Corre por Elas anunciado para 17 de outubro de 2026.
+- **Biritiba Mirim, Ferraz de Vasconcelos e Guararema:** links para notícias e avisos oficiais de saúde; campanhas sem programação atual confirmada não são apresentadas como vigentes.
+- **Itaquaquecetuba:** resgate vacinal contra HPV para jovens de 15 a 19 anos até 31 de dezembro de 2026.
+- **Mogi das Cruzes:** ações de Outubro Rosa e mutirão de ginecologia e vacinação em 24 de outubro de 2026.
+- **Poá:** atendimento estendido de saúde da mulher durante outubro.
+- **Salesópolis:** consulta ao itinerário estadual das Carretas da Mamografia; a passagem no município não foi confirmada nesta consulta.
+- **Santa Isabel:** calendário vacinal municipal 2026/2027.
+- **Suzano:** programação municipal de Outubro Rosa.
 
-## Estrutura do projeto
+As informações foram consultadas em 16 de outubro de 2026. Programações, horários e disponibilidade podem mudar; confirme os detalhes nos canais oficiais antes de se deslocar. A página é uma iniciativa informativa independente e não representa as prefeituras.
 
-```
-Extencionista/
-├── index.html    # Estrutura HTML da página
-├── styles.css    # Tema visual, responsividade e componentes reutilizáveis
-└── script.js     # Lógica de filtros, renderização dinâmica e interações
-```
+## Executar
 
-## Tecnologias utilizadas
+Abra `index.html` em um navegador. O projeto usa HTML, CSS e JavaScript sem dependências, servidor ou processo de build. A fonte tipográfica é carregada do Google Fonts; sem conexão, o navegador usa fontes locais alternativas.
 
-- **HTML5** semântico com foco em acessibilidade (aria-labels, aria-live, modal com foco).
-- **CSS3** moderno: variáveis, grid/flexbox, gradientes e responsividade.
-- **JavaScript** vanilla para manipulação do DOM e gerenciamento de estados de interface.
-- **Google Fonts**: famílias Montserrat e Source Serif 4.
+## Recursos
 
-## Como executar
+- Layout responsivo para celulares, tablets e computadores.
+- Tema claro/escuro, seguindo a preferência do sistema e salvando a escolha no navegador.
+- Busca por texto e filtro por todos os dez municípios do Alto Tietê.
+- Navegação por teclado, link para pular ao conteúdo, estados de foco e suporte a movimento reduzido.
+- Paleta inspirada no Padrão Digital de Governo (gov.br), sem uso da marca ou do logotipo oficial.
+- Links para as fontes municipais, estaduais e federais consultadas.
 
-1. Faça o clone ou download deste repositório.
-2. Abra o arquivo `index.html` diretamente no navegador de sua preferência.
-3. Interaja com os botões de filtro, teste o envio do formulário de newsletter e abra o modal "Receber novidades" para conferir as interações.
+## Atualização das informações
 
-> Não há dependências externas nem necessidade de servidor local. A página é totalmente estática.
-
-## Próximos passos sugeridos
-
-1. Integrar APIs municipais ou planilhas para atualizar ações dinamicamente.
-2. Adicionar formulário de contato real, enviando dados para um backend ou serviço de formulários.
-3. Disponibilizar versão em inglês/espanhol para ampliar o alcance das campanhas.
-4. Otimizar SEO com metadados, sitemap e uso de dados estruturados (JSON-LD).
-
-## Licença
-
-Defina aqui a licença do projeto (ex.: MIT, Apache 2.0, CC-BY). Caso não tenha uma política definida, considere adicionar posteriormente.
+As informações são cadastradas em `script.js`, no array `campaigns`. A busca filtra os cartões pelo nome do município, categoria, título e texto. Ao editar um item, atualize o município, a descrição, o período, os detalhes e o link da fonte oficial. Não trate um comunicado antigo como campanha vigente. Atualize também a data de consulta deste README e a data exibida no `index.html`.

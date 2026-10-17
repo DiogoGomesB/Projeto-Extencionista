@@ -1,213 +1,247 @@
-const actionsData = [
+const campaigns = [
     {
-        title: "Mutirão de Regularização de Documentos",
-        description: "Atendimento gratuito para emissão de RG, CPF e carteira de trabalho para famílias em vulnerabilidade social.",
-        category: "social",
-        bairro: "Cidade Tiradentes",
-        date: "13 de junho",
-        icon: "🧾"
+        city: "aruja",
+        cityName: "Arujá",
+        category: "Outubro Rosa",
+        title: "Corre por Elas: corrida e caminhada",
+        summary: "Arujá promove uma mobilização gratuita de corrida e caminhada em alusão ao Outubro Rosa.",
+        detail: "A atividade está anunciada para 17 de outubro de 2026, na Avenida Mário Covas. Confira orientações e possíveis atualizações no portal municipal.",
+        url: "https://portaldenoticias.prefeituradearuja.sp.gov.br/noticias/category/secretaria-municipal-de-esportes/",
+        linkLabel: "Consultar notícias da Prefeitura"
     },
     {
-        title: "Vacina Móvel nos Bairros",
-        description: "Equipe volante aplicando vacinas contra influenza e COVID-19 em praças e centros comunitários.",
-        category: "saude",
-        bairro: "M'Boi Mirim",
-        date: "15 de junho",
-        icon: "💉"
+        city: "biritiba",
+        cityName: "Biritiba Mirim",
+        category: "Canal oficial",
+        title: "Acompanhe avisos de saúde e vacinação",
+        summary: "O portal municipal reúne comunicados e notícias locais. Nesta consulta, não encontrei uma campanha de vacinação com programação atual confirmada para destacar.",
+        detail: "Confirme nas notícias oficiais quais salas de vacina estão abertas, os horários e as doses disponíveis antes de ir à unidade.",
+        url: "https://www.biritibamirim.sp.gov.br/site/news.php",
+        linkLabel: "Ver notícias da Prefeitura"
     },
     {
-        title: "Oficina de Empreendedorismo Juvenil",
-        description: "Curso rápido para jovens em busca de capacitação em economia criativa e inovação.",
-        category: "social",
-        bairro: "Brasilândia",
-        date: "20 de junho",
-        icon: "💼"
+        city: "ferraz",
+        cityName: "Ferraz de Vasconcelos",
+        category: "Canal oficial",
+        title: "Acompanhe as ações da Secretaria de Saúde",
+        summary: "A Prefeitura publica avisos e atividades municipais na seção de Saúde. Não encontrei uma programação atual de campanha que pudesse confirmar nesta consulta.",
+        detail: "Consulte os comunicados municipais para verificar atividades nas UBSs, horários e necessidade de agendamento.",
+        url: "https://ferrazdevasconcelos.sp.gov.br/web/categoria/saude/",
+        linkLabel: "Ver notícias da Secretaria"
     },
     {
-        title: "Força-Tarefa contra o Frio",
-        description: "Distribuição de cobertores e acolhimento noturno para pessoas em situação de rua.",
-        category: "solidariedade",
-        bairro: "Sé",
-        date: "Diariamente",
-        icon: "🧣"
+        city: "guararema",
+        cityName: "Guararema",
+        category: "Canal oficial",
+        title: "Consulte os avisos municipais de saúde",
+        summary: "A Prefeitura mantém uma página de notícias da Saúde. As publicações localizadas sobre campanhas específicas eram de períodos anteriores, então não as apresento como programação atual.",
+        detail: "Confira o portal municipal para obter informações recentes sobre vacinação, unidades e ações locais.",
+        url: "https://guararema.sp.gov.br/noticias/saude",
+        linkLabel: "Ver notícias de Saúde"
     },
     {
-        title: "Dia D da Vacinação Infantil",
-        description: "Todas as AMAs/UBSs abertas com atrações lúdicas para as crianças atualizarem o calendário vacinal.",
-        category: "saude",
-        bairro: "Tatuapé",
-        date: "22 de junho",
-        icon: "🎉"
+        city: "itaqua",
+        cityName: "Itaquaquecetuba",
+        category: "Vacinação HPV",
+        title: "Resgate vacinal contra HPV vai até dezembro",
+        summary: "Jovens de 15 a 19 anos que não receberam a vacina podem procurar uma UBS até 31 de dezembro de 2026. A vacinação de rotina segue indicada para meninas e meninos de 9 a 14 anos.",
+        detail: "Leve documento com foto, CPF, Cartão SUS e, se possível, a caderneta. Menores devem estar com responsável.",
+        url: "https://www.itaquaquecetuba.sp.gov.br/noticias/ver.php?id=5711",
+        linkLabel: "Ver orientações da Prefeitura"
     },
     {
-        title: "Campanha Bairro Solidário",
-        description: "Arrecadação de alimentos e itens de higiene para famílias atingidas pelas chuvas.",
-        category: "solidariedade",
-        bairro: "Itaquera",
-        date: "Até 30 de junho",
-        icon: "🤝"
+        city: "mogi",
+        cityName: "Mogi das Cruzes",
+        category: "Outubro Rosa",
+        title: "Outubro Rosa amplia prevenção e acesso à saúde",
+        summary: "A programação municipal reúne a Carreta da Saúde da Mulher, exames, ações educativas nas UBSs e atualização vacinal ao longo de outubro.",
+        detail: "Em 24/10, haverá mutirão de ginecologia e vacinação, das 8h às 17h, nas UBSs Jundiapeba, Ponte Grande e Alto Ipiranga.",
+        url: "https://www.mogidascruzes.sp.gov.br/noticia/prefeitura-de-mogi-amplia-acoes-de-prevencao-e-cuidado-as-mulheres-durante-o-outubro-rosa",
+        linkLabel: "Ver notícia da Prefeitura"
+    },
+    {
+        city: "poa",
+        cityName: "Poá",
+        category: "Outubro Rosa",
+        title: "Corujão da Saúde da Mulher até as 21h",
+        summary: "O Centro de Saúde da Mulher Poaense amplia o atendimento durante outubro, com serviços de prevenção e exames voltados à saúde da mulher.",
+        detail: "A Prefeitura informa atendimento estendido até as 21h durante o mês. Confirme no comunicado oficial os serviços, critérios e disponibilidade.",
+        url: "https://poa.sp.gov.br/prefeitura-de-poa-anuncia-corujao-da-saude-da-mulher-com-atendimento-ate-as-21h-durante-todo-o-mes-de-outubro/",
+        linkLabel: "Ver comunicado da Prefeitura"
+    },
+    {
+        city: "salesopolis",
+        cityName: "Salesópolis",
+        category: "Mamografia",
+        title: "Consulte o itinerário das Carretas da Mamografia",
+        summary: "O Governo de São Paulo publica o roteiro do programa Mulheres de Peito, que oferece mamografias gratuitas. A passagem por Salesópolis não foi confirmada nesta consulta.",
+        detail: "Confira no itinerário oficial as cidades atendidas, datas, documentação e condições antes de se deslocar.",
+        url: "https://www.poupatempo.sp.gov.br/carta/B7ED6C20-6D1B-481B-8693-35AD62D16E42",
+        linkLabel: "Consultar itinerário oficial"
+    },
+    {
+        city: "santa-isabel",
+        cityName: "Santa Isabel",
+        category: "Vacinação",
+        title: "Calendário vacinal municipal 2026/2027",
+        summary: "A Secretaria Municipal de Saúde publicou orientações sobre as vacinas do Programa Nacional de Imunizações para crianças e adolescentes.",
+        detail: "Leve a caderneta à UBS para conferir quais doses são indicadas para cada idade e atualizar o esquema vacinal.",
+        url: "https://santaisabel.sp.gov.br/secretarias/secretaria-da-saude/calendario-vacinal-",
+        linkLabel: "Ver calendário da Prefeitura"
+    },
+    {
+        city: "suzano",
+        cityName: "Suzano",
+        category: "Outubro Rosa",
+        title: "Programação municipal de prevenção e cuidado",
+        summary: "A Prefeitura de Suzano publicou a agenda de Outubro Rosa, com atividades de prevenção, atendimento e orientação em unidades e espaços da cidade.",
+        detail: "Consulte a programação oficial para confirmar as datas, os locais e os serviços disponíveis em cada ação.",
+        url: "https://suzano.sp.gov.br/saude/programacao-outubro-rosa/",
+        linkLabel: "Consultar programação oficial"
     }
 ];
 
-const agendaData = [
-    {
-        title: "Feira de Serviços Cidadania já",
-        description: "Carreta da cidadania com atendimento jurídico, cadastro em programas sociais e recreação infantil.",
-        bairro: "Capela do Socorro",
-        date: "18 de junho"
-    },
-    {
-        title: "Encontro de Lideranças Comunitárias",
-        description: "Debate aberto com secretarias municipais sobre demandas emergenciais dos bairros.",
-        bairro: "Freguesia do Ó",
-        date: "24 de junho"
-    },
-    {
-        title: "Mutirão de Castração Animal",
-        description: "Atendimento veterinário gratuito para cães e gatos com agendamento prévio.",
-        bairro: "São Mateus",
-        date: "27 de junho"
-    }
-];
+const campaignGrid = document.querySelector("#campaign-grid");
+const resultsCount = document.querySelector("#results-count");
+const cityFilter = document.querySelector("#city-filter");
+const campaignSearchForm = document.querySelector("#campaign-search-form");
+const campaignSearch = document.querySelector("#campaign-search");
+const themeToggle = document.querySelector("#theme-toggle");
+const themeLabel = themeToggle?.querySelector(".theme-toggle__label");
+const themeStorageKey = "alto-tiete-theme";
 
-const cardsContainer = document.querySelector("#cards-container");
-const filterButtons = document.querySelectorAll(".filter-btn");
-const timeline = document.querySelector("#timeline");
-const newsletterForm = document.querySelector("#newsletter-form");
-const newsletterFeedback = document.querySelector("#newsletter-feedback");
-const subscribeTrigger = document.querySelector("#subscribe-trigger");
-const modal = document.querySelector("#subscribe-modal");
-const modalClose = modal?.querySelector(".modal__close");
-const modalForm = document.querySelector("#modal-form");
-const modalFeedback = document.querySelector("#modal-feedback");
+function createCampaignCard(campaign) {
+    const article = document.createElement("article");
+    article.className = "campaign-card";
 
-function renderCards(category = "todas") {
-    if (!cardsContainer) return;
-    const filtered = category === "todas" ? actionsData : actionsData.filter((item) => item.category === category);
+    const meta = document.createElement("div");
+    meta.className = "card-meta";
+
+    const city = document.createElement("span");
+    city.className = "card-city";
+    city.textContent = campaign.cityName;
+
+    const category = document.createElement("span");
+    category.className = "card-category";
+    category.textContent = campaign.category;
+
+    const title = document.createElement("h3");
+    title.textContent = campaign.title;
+
+    const summary = document.createElement("p");
+    summary.className = "campaign-card__summary";
+    summary.textContent = campaign.summary;
+
+    const detail = document.createElement("p");
+    detail.className = "campaign-card__detail";
+    detail.textContent = campaign.detail;
+
+    const link = document.createElement("a");
+    link.className = "campaign-card__link";
+    link.href = campaign.url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.append(document.createTextNode(campaign.linkLabel));
+
+    const externalIcon = document.createElement("span");
+    externalIcon.setAttribute("aria-hidden", "true");
+    externalIcon.textContent = "↗";
+    link.append(externalIcon);
+
+    meta.append(city, category);
+    article.append(meta, title, summary, detail, link);
+    return article;
+}
+
+function renderCampaigns(city = "todas", searchTerm = "") {
+    if (!campaignGrid || !resultsCount) return;
+
+    const selectedCampaigns = city === "todas"
+        ? campaigns
+        : campaigns.filter((campaign) => campaign.city === city);
+    const normalizedSearch = searchTerm.trim().toLocaleLowerCase("pt-BR");
+    const visibleCampaigns = normalizedSearch
+        ? selectedCampaigns.filter((campaign) => [
+            campaign.cityName,
+            campaign.category,
+            campaign.title,
+            campaign.summary,
+            campaign.detail
+        ].some((value) => value.toLocaleLowerCase("pt-BR").includes(normalizedSearch)))
+        : selectedCampaigns;
 
     const fragment = document.createDocumentFragment();
-
-    filtered.forEach((item) => {
-        const article = document.createElement("article");
-        article.className = "card";
-        article.setAttribute("data-category", item.category);
-
-        article.innerHTML = `
-            <span class="card__badge">${item.icon} ${formatCategory(item.category)}</span>
-            <h3>${item.title}</h3>
-            <p>${item.description}</p>
-            <div class="card__meta">
-                <span>📍 ${item.bairro}</span>
-                <span>🗓️ ${item.date}</span>
-            </div>
-        `;
-        fragment.appendChild(article);
+    visibleCampaigns.forEach((campaign) => {
+        fragment.append(createCampaignCard(campaign));
     });
 
-    cardsContainer.innerHTML = "";
-    cardsContainer.appendChild(fragment);
-}
-
-function renderTimeline() {
-    if (!timeline) return;
-    const fragment = document.createDocumentFragment();
-
-    agendaData.forEach((item) => {
-        const section = document.createElement("section");
-        section.className = "timeline__item";
-        section.innerHTML = `
-            <header>
-                <h3>${item.title}</h3>
-                <time datetime="2025-06-01">${item.date}</time>
-            </header>
-            <p>${item.description}</p>
-            <span>📍 ${item.bairro}</span>
-        `;
-        fragment.appendChild(section);
-    });
-
-    timeline.innerHTML = "";
-    timeline.appendChild(fragment);
-}
-
-function formatCategory(category) {
-    const map = {
-        social: "Projeto social",
-        saude: "Saúde",
-        solidariedade: "Solidariedade"
-    };
-    return map[category] ?? "Ação";
-}
-
-function handleFilterClick(event) {
-    const button = event.currentTarget;
-    const category = button.dataset.category;
-
-    filterButtons.forEach((btn) => btn.classList.toggle("active", btn === button));
-    renderCards(category);
-}
-
-filterButtons.forEach((button) => {
-    button.addEventListener("click", handleFilterClick);
-});
-
-renderCards();
-renderTimeline();
-
-newsletterForm?.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const formData = new FormData(newsletterForm);
-    const email = formData.get("email")?.toString().trim();
-
-    if (!email) {
-        newsletterFeedback.textContent = "Por favor, informe um e-mail válido.";
-        newsletterFeedback.style.color = "#b91c1c";
+    campaignGrid.replaceChildren(fragment);
+    const count = visibleCampaigns.length;
+    if (count === 0) {
+        resultsCount.textContent = "Nenhum resultado encontrado. Tente outro termo ou município.";
         return;
     }
+    resultsCount.textContent = `${count} ${count === 1 ? "resultado encontrado" : "resultados encontrados"}.`;
+}
 
-    newsletterFeedback.textContent = "Obrigado! Você começará a receber as novidades.";
-    newsletterFeedback.style.color = "#047857";
-    newsletterForm.reset();
+cityFilter?.addEventListener("change", () => {
+    renderCampaigns(cityFilter.value, campaignSearch?.value ?? "");
 });
 
-function toggleModal(show) {
-    if (!modal) return;
-    modal.setAttribute("aria-hidden", String(!show));
-    modal.classList.toggle("is-visible", show);
-    if (show) {
-        modal.querySelector("input")?.focus();
+campaignSearch?.addEventListener("input", () => {
+    renderCampaigns(cityFilter?.value ?? "todas", campaignSearch.value);
+});
+
+campaignSearchForm?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    renderCampaigns(cityFilter?.value ?? "todas", campaignSearch?.value ?? "");
+});
+
+function getCurrentTheme() {
+    const explicitTheme = document.documentElement.dataset.theme;
+    if (explicitTheme) return explicitTheme;
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+}
+
+function updateThemeControl(theme) {
+    const nextTheme = theme === "dark" ? "light" : "dark";
+    const accessibleLabel = `Ativar tema ${nextTheme === "dark" ? "escuro" : "claro"}`;
+    themeToggle?.setAttribute("aria-label", accessibleLabel);
+    themeToggle?.setAttribute("title", accessibleLabel);
+    if (themeLabel) themeLabel.textContent = theme === "dark" ? "Escuro" : "Claro";
+}
+
+function applyTheme(theme, persist = false) {
+    document.documentElement.dataset.theme = theme;
+    updateThemeControl(theme);
+
+    if (!persist) return;
+    try {
+        window.localStorage.setItem(themeStorageKey, theme);
+    } catch (error) {
+        console.warn("Não foi possível salvar a preferência de tema neste navegador.", error);
     }
 }
 
-subscribeTrigger?.addEventListener("click", () => toggleModal(true));
-modalClose?.addEventListener("click", () => toggleModal(false));
-
-modal?.addEventListener("click", (event) => {
-    if (event.target === modal) {
-        toggleModal(false);
-    }
-});
-
-modalForm?.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const formData = new FormData(modalForm);
-    const bairro = formData.get("bairro")?.toString().trim();
-    const temas = formData.getAll("tema");
-
-    if (!bairro || temas.length === 0) {
-        modalFeedback.textContent = "Selecione pelo menos um tema e informe seu bairro.";
-        modalFeedback.style.color = "#b91c1c";
-        return;
+function initializeTheme() {
+    let savedTheme;
+    try {
+        savedTheme = window.localStorage.getItem(themeStorageKey);
+    } catch (error) {
+        console.warn("Não foi possível ler a preferência de tema neste navegador.", error);
     }
 
-    modalFeedback.textContent = "Preferências salvas! Em breve enviaremos novidades.";
-    modalFeedback.style.color = "#047857";
-    setTimeout(() => toggleModal(false), 1200);
-    modalForm.reset();
+    if (savedTheme === "light" || savedTheme === "dark") {
+        applyTheme(savedTheme);
+    } else {
+        updateThemeControl(getCurrentTheme());
+    }
+}
+
+themeToggle?.addEventListener("click", () => {
+    const nextTheme = getCurrentTheme() === "dark" ? "light" : "dark";
+    applyTheme(nextTheme, true);
 });
 
-window.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && modal?.classList.contains("is-visible")) {
-        toggleModal(false);
-    }
-});
+renderCampaigns();
+initializeTheme();

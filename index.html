@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#f8f9fa">
+    <meta name="theme-color" content="#0c326f">
     <meta name="description" content="Acompanhe campanhas de saúde, vacinação e serviços públicos no Alto Tietê com links para fontes oficiais.">
     <title>Alto Tietê em Rede | Campanhas e serviços</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
@@ -47,13 +47,18 @@
         <section class="hero page-width" aria-labelledby="hero-title">
             <div class="hero-copy">
                 <p class="eyebrow"><span class="status-dot"></span> Região do Alto Tietê · São Paulo</p>
-                <h1 id="hero-title">Serviços e informações do Alto Tietê</h1>
-                <p class="hero-description">Campanhas, vacinação e serviços públicos dos municípios da região.</p>
-                <a class="button button--primary" href="#campanhas">
-                    Explorar campanhas
-                    <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5"></path></svg>
-                </a>
-                <p class="source-date">Informações consultadas em <time datetime="2026-10-16">16 de outubro de 2026</time></p>
+                <h1 id="hero-title">Serviços e informações do <span>Alto Tietê</span></h1>
+                <p class="hero-description">Acompanhe campanhas de saúde, vacinação e serviços públicos dos dez municípios da região com acesso rápido aos canais oficiais.</p>
+                <div class="hero-actions">
+                    <a class="button button--primary" href="#campanhas">
+                        Explorar campanhas
+                        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5"></path></svg>
+                    </a>
+                    <a class="button button--secondary" href="#vacinacao">
+                        Calendário vacinal
+                    </a>
+                </div>
+                <p class="source-date">Informações consultadas e atualizadas em <time datetime="2026-10-28">28 de outubro de 2026</time></p>
             </div>
 
             <aside class="hero-panel" aria-label="Resumo regional">
@@ -61,36 +66,37 @@
                     <span class="panel-icon" aria-hidden="true">
                         <svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
                     </span>
-                    <span class="live-label"><span class="status-dot"></span> Painel regional</span>
+                    <span class="live-label"><span class="status-dot"></span> Painel regional · 10 municípios</span>
                 </div>
                 <p class="hero-panel__title">Dez cidades. Uma região.</p>
-                <p class="hero-panel__text">Consulte campanhas confirmadas e acompanhe as informações oficiais dos municípios.</p>
-                <div class="region-tags" aria-label="Dez municípios do Alto Tietê">
-                    <span>Arujá</span>
-                    <span>Biritiba Mirim</span>
-                    <span>Ferraz de Vasconcelos</span>
-                    <span>Guararema</span>
-                    <span>Itaquaquecetuba</span>
-                    <span>Mogi das Cruzes</span>
-                    <span>Poá</span>
-                    <span>Salesópolis</span>
-                    <span>Santa Isabel</span>
-                    <span>Suzano</span>
+                <p class="hero-panel__text">Selecione um município abaixo para filtrar rapidamente ou consulte todas as campanhas confirmadas.</p>
+                <div class="region-tags" role="group" aria-label="Filtrar por município do Alto Tietê">
+                    <button type="button" class="region-tag" data-city="aruja">Arujá</button>
+                    <button type="button" class="region-tag" data-city="biritiba">Biritiba Mirim</button>
+                    <button type="button" class="region-tag" data-city="ferraz">Ferraz de Vasconcelos</button>
+                    <button type="button" class="region-tag" data-city="guararema">Guararema</button>
+                    <button type="button" class="region-tag" data-city="itaqua">Itaquaquecetuba</button>
+                    <button type="button" class="region-tag" data-city="mogi">Mogi das Cruzes</button>
+                    <button type="button" class="region-tag" data-city="poa">Poá</button>
+                    <button type="button" class="region-tag" data-city="salesopolis">Salesópolis</button>
+                    <button type="button" class="region-tag" data-city="santa-isabel">Santa Isabel</button>
+                    <button type="button" class="region-tag" data-city="suzano">Suzano</button>
                 </div>
-                <p class="hero-panel__footnote">Os destaques estão separados dos canais de acompanhamento.</p>
+                <p class="hero-panel__footnote">Os destaques estão separados dos canais oficiais de acompanhamento.</p>
             </aside>
         </section>
 
         <section class="search-section page-width" aria-label="Buscar campanhas e serviços">
             <form class="search-form" id="campaign-search-form" role="search">
                 <label class="sr-only" for="campaign-search">O que você procura?</label>
-                <input id="campaign-search" name="q" type="search" placeholder="O que você procura?" autocomplete="off">
-                <button type="submit" aria-label="Buscar">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                <span class="search-form__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
                         <circle cx="10.8" cy="10.8" r="6.8"></circle>
                         <path d="m16 16 5 5"></path>
                     </svg>
-                </button>
+                </span>
+                <input id="campaign-search" name="q" type="search" placeholder="O que você procura? (ex.: vacinação, Outubro Rosa, Mogi...)" autocomplete="off">
+                <button type="submit">Buscar</button>
             </form>
         </section>
 
@@ -109,20 +115,29 @@
                 </header>
 
                 <div class="city-filter">
-                    <label for="city-filter">Filtrar por município</label>
-                    <select id="city-filter" name="municipio">
-                        <option value="todas">Todos os municípios</option>
-                        <option value="aruja">Arujá</option>
-                        <option value="biritiba">Biritiba Mirim</option>
-                        <option value="ferraz">Ferraz de Vasconcelos</option>
-                        <option value="guararema">Guararema</option>
-                        <option value="itaqua">Itaquaquecetuba</option>
-                        <option value="mogi">Mogi das Cruzes</option>
-                        <option value="poa">Poá</option>
-                        <option value="salesopolis">Salesópolis</option>
-                        <option value="santa-isabel">Santa Isabel</option>
-                        <option value="suzano">Suzano</option>
-                    </select>
+                    <div class="city-filter__select-group">
+                        <label for="city-filter">Filtrar por município</label>
+                        <select id="city-filter" name="municipio">
+                            <option value="todas">Todos os municípios</option>
+                            <option value="aruja">Arujá</option>
+                            <option value="biritiba">Biritiba Mirim</option>
+                            <option value="ferraz">Ferraz de Vasconcelos</option>
+                            <option value="guararema">Guararema</option>
+                            <option value="itaqua">Itaquaquecetuba</option>
+                            <option value="mogi">Mogi das Cruzes</option>
+                            <option value="poa">Poá</option>
+                            <option value="salesopolis">Salesópolis</option>
+                            <option value="santa-isabel">Santa Isabel</option>
+                            <option value="suzano">Suzano</option>
+                        </select>
+                    </div>
+
+                    <div class="status-filter" role="group" aria-label="Filtrar por período da notícia">
+                        <button type="button" class="status-pill is-active" data-status="todas" aria-pressed="true">Todas</button>
+                        <button type="button" class="status-pill" data-status="proxima" aria-pressed="false">Vão chegar · Novembro</button>
+                        <button type="button" class="status-pill" data-status="vigente" aria-pressed="false">Em andamento</button>
+                        <button type="button" class="status-pill" data-status="recente" aria-pressed="false">Recentes / Anteriores</button>
+                    </div>
                 </div>
 
                 <div class="campaign-grid" id="campaign-grid" aria-live="polite"></div>

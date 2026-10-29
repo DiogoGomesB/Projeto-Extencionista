@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0c326f">
+    <meta name="description" content="Consulte campanhas de saúde, mutirões, Novembro Azul, Outubro Rosa e serviços públicos nos 10 municípios do Alto Tietê.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Alto Tietê em Rede">
+    <meta property="og:title" content="Campanhas e Mutirões | Alto Tietê em Rede">
+    <meta property="og:description" content="Consulte campanhas de saúde, mutirões, Novembro Azul, Outubro Rosa e serviços públicos nos 10 municípios do Alto Tietê.">
+    <meta name="twitter:card" content="summary">
+    <title>Campanhas | Alto Tietê em Rede</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+        <div class="header-inner page-width">
+            <a class="brand" href="index.html" aria-label="Alto Tietê em Rede, página inicial">
+                <span class="brand-mark" aria-hidden="true">AT</span>
+                <span class="brand-copy">
+                    <strong>Alto Tietê <span>em rede</span></strong>
+                    <small>Informação pública perto de você</small>
+                </span>
+            </a>
+
+            <nav class="main-nav" aria-label="Navegação principal">
+                <a href="index.html">Início</a>
+                <a href="campanhas.html" class="is-current" aria-current="page">Campanhas</a>
+                <a href="vacinacao.html">Vacinação</a>
+                <a href="desenvolvedores.html">Desenvolvedores</a>
+            </nav>
+
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ativar tema escuro">
+                <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.5 8.5 0 1 0 20.2 15.4Z"></path>
+                </svg>
+                <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+                </svg>
+                <span class="theme-toggle__label">Tema</span>
+            </button>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <section class="dev-hero page-width" aria-labelledby="campaigns-page-title">
+            <div class="dev-hero__inner">
+                <p class="eyebrow"><span class="status-dot"></span> 10 Municípios do Alto Tietê · SP</p>
+                <h1 id="campaigns-page-title">Campanhas e <span>Mutirões</span></h1>
+                <p class="hero-description">
+                    Pesquise ações que vão chegar em novembro, serviços em andamento e mutirões recentes nas prefeituras da região.
+                </p>
+                <p class="source-date">Informações consultadas e atualizadas em <time datetime="2026-10-28">28 de outubro de 2026</time></p>
+            </div>
+        </section>
+
+        <section class="search-section page-width" aria-label="Buscar campanhas e serviços">
+            <form class="search-form" id="campaign-search-form" role="search">
+                <label class="sr-only" for="campaign-search">O que você procura?</label>
+                <span class="search-form__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="10.8" cy="10.8" r="6.8"></circle>
+                        <path d="m16 16 5 5"></path>
+                    </svg>
+                </span>
+                <input id="campaign-search" name="q" type="search" placeholder="O que você procura? (ex.: Novembro Azul, HPV, Mogi...)" autocomplete="off">
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+
+        <section class="campaigns-section" id="campanhas" aria-labelledby="campaigns-title">
+            <div class="page-width">
+                <header class="section-heading">
+                    <div>
+                        <p class="eyebrow">Acompanhe de perto</p>
+                        <h2 id="campaigns-title">Mural de Campanhas e Notícias</h2>
+                        <p class="section-description">Filtre por cidade ou período e acesse os comunicados oficiais de cada prefeitura.</p>
+                    </div>
+                    <span class="verified-note">
+                        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3.2 3.2L15.5 6"></path><circle cx="10" cy="10" r="8"></circle></svg>
+                        Com links oficiais
+                    </span>
+                </header>
+
+                <div class="city-filter">
+                    <div class="city-filter__select-group">
+                        <label for="city-filter">Filtrar por município</label>
+                        <select id="city-filter" name="municipio">
+                            <option value="todas">Todos os municípios</option>
+                            <option value="aruja">Arujá</option>
+                            <option value="biritiba">Biritiba Mirim</option>
+                            <option value="ferraz">Ferraz de Vasconcelos</option>
+                            <option value="guararema">Guararema</option>
+                            <option value="itaqua">Itaquaquecetuba</option>
+                            <option value="mogi">Mogi das Cruzes</option>
+                            <option value="poa">Poá</option>
+                            <option value="salesopolis">Salesópolis</option>
+                            <option value="santa-isabel">Santa Isabel</option>
+                            <option value="suzano">Suzano</option>
+                        </select>
+                    </div>
+
+                    <div class="status-filter" role="group" aria-label="Filtrar por período da notícia">
+                        <button type="button" class="status-pill is-active" data-status="todas" aria-pressed="true">Todas</button>
+                        <button type="button" class="status-pill" data-status="proxima" aria-pressed="false">Vão chegar · Novembro</button>
+                        <button type="button" class="status-pill" data-status="vigente" aria-pressed="false">Em andamento</button>
+                        <button type="button" class="status-pill" data-status="recente" aria-pressed="false">Recentes / Anteriores</button>
+                    </div>
+                </div>
+
+                <div class="campaign-grid" id="campaign-grid" aria-live="polite"></div>
+                <p class="results-count" id="results-count" aria-live="polite"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="page-width footer-inner">
+            <a class="brand brand--footer" href="index.html" aria-label="Alto Tietê em Rede, início">
+                <span class="brand-mark" aria-hidden="true">AT</span>
+                <span class="brand-copy">
+                    <strong>Alto Tietê <span>em rede</span></strong>
+                    <small>Informação pública perto de você</small>
+                </span>
+            </a>
+            <p>Projeto informativo independente. Confirme serviços, horários e elegibilidade nos canais oficiais.</p>
+            <span class="footer-year">© 2026 · Alto Tietê, SP</span>
+        </div>
+    </footer>
+</body>
+</html>
+

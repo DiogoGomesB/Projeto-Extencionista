@@ -407,6 +407,10 @@ statusPills.forEach((pill) => {
 regionTags.forEach((button) => {
     button.addEventListener("click", () => {
         const clickedCity = button.dataset.city ?? "todas";
+        if (!campaignGrid) {
+            window.location.href = `campanhas.html?cidade=${encodeURIComponent(clickedCity)}`;
+            return;
+        }
         const nextCity = cityFilter?.value === clickedCity ? "todas" : clickedCity;
         if (cityFilter) cityFilter.value = nextCity;
         renderCampaigns(nextCity, campaignSearch?.value ?? "", currentStatus);
@@ -530,6 +534,39 @@ function initializeDeveloperCards() {
     });
 }
 
-renderCampaigns();
+function renderVaccineCampaigns() {
+    const vaccineGrid = document.querySelector("#vaccine-grid");
+    if (!vaccineGrid) return;
+
+    const vaccineKeywords = ["vacina", "imuniza", "hpv", "vacivida", "antirrábica"];
+    const vaccineItems = campaigns.filter((campaign) =>
+        [campaign.category, campaign.title, campaign.summary, campaign.detail].some((text) =>
+            vaccineKeywords.some((kw) => text.toLocaleLowerCase("pt-BR").includes(kw))
+        )
+    );
+
+    const fragment = document.createDocumentFragment();
+    vaccineItems.forEach((campaign) => {
+        fragment.append(createCampaignCard(campaign));
+    });
+    vaccineGrid.replaceChildren(fragment);
+}
+
+function initializeCampaignFiltersFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    const initialCity = params.get("cidade") ?? "todas";
+    if (cityFilter && initialCity !== "todas") {
+        const hasOption = Array.from(cityFilter.options).some((opt) => opt.value === initialCity);
+        if (hasOption) {
+            cityFilter.value = initialCity;
+            renderCampaigns(initialCity, campaignSearch?.value ?? "", currentStatus);
+            return;
+        }
+    }
+    renderCampaigns();
+}
+
+initializeCampaignFiltersFromUrl();
+renderVaccineCampaigns();
 initializeTheme();
 initializeDeveloperCards();

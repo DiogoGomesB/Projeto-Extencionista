@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#0c326f">
     <meta name="description" content="Acompanhe campanhas de saúde, vacinação e serviços públicos no Alto Tietê com links para fontes oficiais.">
-    <title>Alto Tietê em Rede | Campanhas e serviços</title>
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Alto Tietê em Rede">
+    <meta property="og:title" content="Alto Tietê em Rede | Campanhas, Vacinação e Serviços Públicos">
+    <meta property="og:description" content="Acompanhe campanhas de saúde, vacinação e serviços públicos nos 10 municípios do Alto Tietê com links para fontes oficiais.">
+    <meta name="twitter:card" content="summary">
+    <title>Alto Tietê em Rede | Início</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
@@ -16,7 +23,7 @@
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
     <header class="site-header">
         <div class="header-inner page-width">
-            <a class="brand" href="#" aria-label="Alto Tietê em Rede, página inicial">
+            <a class="brand" href="index.html" aria-label="Alto Tietê em Rede, página inicial">
                 <span class="brand-mark" aria-hidden="true">AT</span>
                 <span class="brand-copy">
                     <strong>Alto Tietê <span>em rede</span></strong>
@@ -25,9 +32,9 @@
             </a>
 
             <nav class="main-nav" aria-label="Navegação principal">
-                <a href="#campanhas">Campanhas</a>
-                <a href="#vacinacao">Vacinação</a>
-                <a href="#fontes">Fontes oficiais</a>
+                <a href="index.html" class="is-current" aria-current="page">Início</a>
+                <a href="campanhas.html">Campanhas</a>
+                <a href="vacinacao.html">Vacinação</a>
                 <a href="desenvolvedores.html">Desenvolvedores</a>
             </nav>
 
@@ -51,12 +58,12 @@
                 <h1 id="hero-title">Serviços e informações do <span>Alto Tietê</span></h1>
                 <p class="hero-description">Acompanhe campanhas de saúde, vacinação e serviços públicos dos dez municípios da região com acesso rápido aos canais oficiais.</p>
                 <div class="hero-actions">
-                    <a class="button button--primary" href="#campanhas">
+                    <a class="button button--primary" href="campanhas.html">
                         Explorar campanhas
                         <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5"></path></svg>
                     </a>
-                    <a class="button button--secondary" href="#vacinacao">
-                        Calendário vacinal
+                    <a class="button button--secondary" href="vacinacao.html">
+                        Guia de vacinação
                     </a>
                 </div>
                 <p class="source-date">Informações consultadas e atualizadas em <time datetime="2026-10-28">28 de outubro de 2026</time></p>
@@ -70,8 +77,8 @@
                     <span class="live-label"><span class="status-dot"></span> Painel regional · 10 municípios</span>
                 </div>
                 <p class="hero-panel__title">Dez cidades. Uma região.</p>
-                <p class="hero-panel__text">Selecione um município abaixo para filtrar rapidamente ou consulte todas as campanhas confirmadas.</p>
-                <div class="region-tags" role="group" aria-label="Filtrar por município do Alto Tietê">
+                <p class="hero-panel__text">Toque em um município abaixo para abrir diretamente as campanhas da sua cidade.</p>
+                <div class="region-tags" role="group" aria-label="Acessar campanhas por município do Alto Tietê">
                     <button type="button" class="region-tag" data-city="aruja">Arujá</button>
                     <button type="button" class="region-tag" data-city="biritiba">Biritiba Mirim</button>
                     <button type="button" class="region-tag" data-city="ferraz">Ferraz de Vasconcelos</button>
@@ -83,88 +90,64 @@
                     <button type="button" class="region-tag" data-city="santa-isabel">Santa Isabel</button>
                     <button type="button" class="region-tag" data-city="suzano">Suzano</button>
                 </div>
-                <p class="hero-panel__footnote">Os destaques estão separados dos canais oficiais de acompanhamento.</p>
+                <p class="hero-panel__footnote">Todas as informações possuem link direto para as prefeituras.</p>
             </aside>
         </section>
 
-        <section class="search-section page-width" aria-label="Buscar campanhas e serviços">
-            <form class="search-form" id="campaign-search-form" role="search">
-                <label class="sr-only" for="campaign-search">O que você procura?</label>
-                <span class="search-form__icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24">
-                        <circle cx="10.8" cy="10.8" r="6.8"></circle>
-                        <path d="m16 16 5 5"></path>
-                    </svg>
-                </span>
-                <input id="campaign-search" name="q" type="search" placeholder="O que você procura? (ex.: vacinação, Outubro Rosa, Mogi...)" autocomplete="off">
-                <button type="submit">Buscar</button>
-            </form>
-        </section>
-
-        <section class="campaigns-section" id="campanhas" aria-labelledby="campaigns-title">
+        <section class="campaigns-section" aria-labelledby="shortcuts-title">
             <div class="page-width">
                 <header class="section-heading">
                     <div>
-                        <p class="eyebrow">Acompanhe de perto</p>
-                        <h2 id="campaigns-title">Campanhas e serviços para você</h2>
-                        <p class="section-description">Encontre informações por município e acesse os comunicados oficiais.</p>
+                        <p class="eyebrow">Navegação rápida</p>
+                        <h2 id="shortcuts-title">O que você deseja consultar?</h2>
+                        <p class="section-description">Acesse diretamente as áreas dedicadas do portal Alto Tietê em Rede.</p>
                     </div>
-                    <span class="verified-note">
-                        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3.2 3.2L15.5 6"></path><circle cx="10" cy="10" r="8"></circle></svg>
-                        Com links oficiais
-                    </span>
                 </header>
 
-                <div class="city-filter">
-                    <div class="city-filter__select-group">
-                        <label for="city-filter">Filtrar por município</label>
-                        <select id="city-filter" name="municipio">
-                            <option value="todas">Todos os municípios</option>
-                            <option value="aruja">Arujá</option>
-                            <option value="biritiba">Biritiba Mirim</option>
-                            <option value="ferraz">Ferraz de Vasconcelos</option>
-                            <option value="guararema">Guararema</option>
-                            <option value="itaqua">Itaquaquecetuba</option>
-                            <option value="mogi">Mogi das Cruzes</option>
-                            <option value="poa">Poá</option>
-                            <option value="salesopolis">Salesópolis</option>
-                            <option value="santa-isabel">Santa Isabel</option>
-                            <option value="suzano">Suzano</option>
-                        </select>
-                    </div>
+                <div class="campaign-grid">
+                    <article class="campaign-card" data-status="proxima">
+                        <div class="card-meta">
+                            <span class="card-city">10 Municípios</span>
+                            <span class="card-status card-status--proxima">22 Notícias</span>
+                        </div>
+                        <h3>Campanhas e Mutirões de Saúde</h3>
+                        <p class="campaign-card__summary">Consulte a programação do Novembro Azul, mutirões de exames preventivos, ações em andamento e histórico recente por cidade.</p>
+                        <p class="campaign-card__detail">Busca por palavra-chave, filtro por município e filtro por período.</p>
+                        <a class="campaign-card__link" href="campanhas.html">
+                            Acessar aba de Campanhas
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </article>
 
-                    <div class="status-filter" role="group" aria-label="Filtrar por período da notícia">
-                        <button type="button" class="status-pill is-active" data-status="todas" aria-pressed="true">Todas</button>
-                        <button type="button" class="status-pill" data-status="proxima" aria-pressed="false">Vão chegar · Novembro</button>
-                        <button type="button" class="status-pill" data-status="vigente" aria-pressed="false">Em andamento</button>
-                        <button type="button" class="status-pill" data-status="recente" aria-pressed="false">Recentes / Anteriores</button>
-                    </div>
+                    <article class="campaign-card" data-status="vigente">
+                        <div class="card-meta">
+                            <span class="card-city">SUS · PNI</span>
+                            <span class="card-status card-status--vigente">Ano todo</span>
+                        </div>
+                        <h3>Vacinação e Calendário Nacional</h3>
+                        <p class="campaign-card__summary">Veja quais documentos levar à UBS, informações sobre o resgate vacinal contra HPV, salas de vacina municipais e Meu SUS Digital.</p>
+                        <p class="campaign-card__detail">Acesso rápido ao Calendário Nacional de Vacinação 2026 do Ministério da Saúde.</p>
+                        <a class="campaign-card__link" href="vacinacao.html">
+                            Acessar aba de Vacinação
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </article>
+
+                    <article class="campaign-card" data-status="recente">
+                        <div class="card-meta">
+                            <span class="card-city">Extensão Universitária</span>
+                            <span class="card-category card-category--active">14 Integrantes</span>
+                        </div>
+                        <h3>Equipe de Desenvolvedores</h3>
+                        <p class="campaign-card__summary">Conheça o grupo de 14 estudantes responsáveis pela pesquisa nos portais oficiais, design e desenvolvimento desta plataforma.</p>
+                        <p class="campaign-card__detail">Perfis profissionais com foto e link direto para o LinkedIn de cada integrante.</p>
+                        <a class="campaign-card__link" href="desenvolvedores.html">
+                            Conhecer os Desenvolvedores
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </article>
                 </div>
-
-                <div class="campaign-grid" id="campaign-grid" aria-live="polite"></div>
-                <p class="results-count" id="results-count" aria-live="polite"></p>
             </div>
-        </section>
-
-        <section class="vaccine-section page-width" id="vacinacao" aria-labelledby="vaccine-title">
-            <div class="vaccine-copy">
-                <p class="eyebrow">Proteção o ano todo</p>
-                <h2 id="vaccine-title">Sua carteira de vacinação está em dia?</h2>
-                <p>O SUS oferece vacinas conforme a idade e a situação de cada pessoa. Leve sua caderneta a uma unidade de saúde para conferir as doses indicadas e consulte o calendário nacional atualizado.</p>
-                <a class="text-link" href="https://www.gov.br/saude/pt-br/vacinacao/publicacoes/instrucao-normativa-que-instrui-o-calendario-nacional-de-vacinacao-2026.pdf/view" target="_blank" rel="noopener noreferrer">
-                    Ver calendário do Ministério da Saúde
-                    <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 4h9v9m0-9-9 9"></path><path d="M14 12v4H4V6h4"></path></svg>
-                </a>
-            </div>
-            <aside class="vaccine-reminder">
-                <span class="reminder-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24"><path d="m15 4 5 5M13 6l5 5M4 20l4.5-1 11-11a2.12 2.12 0 0 0-3-3l-11 11L4 20Z"></path><path d="M3 21h18"></path></svg>
-                </span>
-                <div>
-                    <strong>Antes de ir à UBS</strong>
-                    <p>Confira horário, disponibilidade de doses e necessidade de agendamento nos canais oficiais do seu município.</p>
-                </div>
-            </aside>
         </section>
 
         <section class="sources-section" id="fontes" aria-labelledby="sources-title">
@@ -184,7 +167,7 @@
                     <a href="https://poa.sp.gov.br/" target="_blank" rel="noopener noreferrer">Prefeitura de Poá <span aria-hidden="true">↗</span></a>
                     <a href="https://www.salesopolis.sp.gov.br/" target="_blank" rel="noopener noreferrer">Prefeitura de Salesópolis <span aria-hidden="true">↗</span></a>
                     <a href="https://santaisabel.sp.gov.br/secretarias/secretaria-da-saude/calendario-vacinal-" target="_blank" rel="noopener noreferrer">Prefeitura de Santa Isabel · Calendário vacinal <span aria-hidden="true">↗</span></a>
-                    <a href="https://suzano.sp.gov.br/saude/programacao-outubro-rosa/" target="_blank" rel="noopener noreferrer">Prefeitura de Suzano · Outubro Rosa <span aria-hidden="true">↗</span></a>
+                    <a href="https://suzano.sp.gov.br/saude/programacao-outubro-rosa/" target="_blank" rel="noopener noreferrer">Prefeitura de Suzano · Saúde <span aria-hidden="true">↗</span></a>
                     <a href="https://www.poupatempo.sp.gov.br/carta/B7ED6C20-6D1B-481B-8693-35AD62D16E42" target="_blank" rel="noopener noreferrer">Governo de SP · Carretas da Mamografia <span aria-hidden="true">↗</span></a>
                     <a href="https://www.gov.br/saude/pt-br" target="_blank" rel="noopener noreferrer">Ministério da Saúde <span aria-hidden="true">↗</span></a>
                 </div>
@@ -194,7 +177,7 @@
 
     <footer class="site-footer">
         <div class="page-width footer-inner">
-            <a class="brand brand--footer" href="#" aria-label="Alto Tietê em Rede, início">
+            <a class="brand brand--footer" href="index.html" aria-label="Alto Tietê em Rede, início">
                 <span class="brand-mark" aria-hidden="true">AT</span>
                 <span class="brand-copy">
                     <strong>Alto Tietê <span>em rede</span></strong>

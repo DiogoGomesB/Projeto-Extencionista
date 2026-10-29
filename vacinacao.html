@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0c326f">
+    <meta name="description" content="Guia de vacinação no Alto Tietê: calendário nacional do SUS, documentos necessários, resgate vacinal contra HPV e salas de vacina nos municípios.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Alto Tietê em Rede">
+    <meta property="og:title" content="Guia de Vacinação e SUS | Alto Tietê em Rede">
+    <meta property="og:description" content="Calendário nacional do SUS, documentos necessários, resgate vacinal contra HPV e salas de vacina nos 10 municípios do Alto Tietê.">
+    <meta name="twitter:card" content="summary">
+    <title>Vacinação | Alto Tietê em Rede</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+        <div class="header-inner page-width">
+            <a class="brand" href="index.html" aria-label="Alto Tietê em Rede, página inicial">
+                <span class="brand-mark" aria-hidden="true">AT</span>
+                <span class="brand-copy">
+                    <strong>Alto Tietê <span>em rede</span></strong>
+                    <small>Informação pública perto de você</small>
+                </span>
+            </a>
+
+            <nav class="main-nav" aria-label="Navegação principal">
+                <a href="index.html">Início</a>
+                <a href="campanhas.html">Campanhas</a>
+                <a href="vacinacao.html" class="is-current" aria-current="page">Vacinação</a>
+                <a href="desenvolvedores.html">Desenvolvedores</a>
+            </nav>
+
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ativar tema escuro">
+                <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.5 8.5 0 1 0 20.2 15.4Z"></path>
+                </svg>
+                <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+                </svg>
+                <span class="theme-toggle__label">Tema</span>
+            </button>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <section class="vaccine-section page-width" id="vacinacao" aria-labelledby="vaccine-title">
+            <div class="vaccine-copy">
+                <p class="eyebrow"><span class="status-dot"></span> Proteção o ano todo · SUS</p>
+                <h1 id="vaccine-title">Sua carteira de <span>vacinação</span> está em dia?</h1>
+                <p>O Sistema Único de Saúde (SUS) oferece gratuitamente vacinas para crianças, adolescentes, adultos, gestantes e idosos. Leve sua caderneta a uma UBS do seu município para atualizar as doses em atraso.</p>
+                <div class="hero-actions">
+                    <a class="button button--primary" href="https://www.gov.br/saude/pt-br/vacinacao/publicacoes/instrucao-normativa-que-instrui-o-calendario-nacional-de-vacinacao-2026.pdf/view" target="_blank" rel="noopener noreferrer">
+                        Calendário do Ministério da Saúde
+                        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 4h9v9m0-9-9 9"></path><path d="M14 12v4H4V6h4"></path></svg>
+                    </a>
+                    <a class="button button--secondary" href="https://meususdigital.saude.gov.br/" target="_blank" rel="noopener noreferrer">
+                        Acessar Meu SUS Digital ↗
+                    </a>
+                </div>
+            </div>
+            <aside class="vaccine-reminder" aria-label="Orientações para atendimento na UBS">
+                <span class="reminder-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="m15 4 5 5M13 6l5 5M4 20l4.5-1 11-11a2.12 2.12 0 0 0-3-3l-11 11L4 20Z"></path><path d="M3 21h18"></path></svg>
+                </span>
+                <div>
+                    <strong>O que levar à sala de vacina (UBS)</strong>
+                    <p>Para atualizar suas doses na unidade de saúde, leve:</p>
+                    <ul class="vaccine-checklist">
+                        <li><strong>Documento oficial com foto</strong> (RG ou certidão de nascimento)</li>
+                        <li><strong>CPF</strong> e <strong>Cartão do SUS</strong></li>
+                        <li><strong>Caderneta física de vacinação</strong> (se possuir)</li>
+                    </ul>
+                </div>
+            </aside>
+        </section>
+
+        <section class="campaigns-section" aria-labelledby="vaccine-cities-title">
+            <div class="page-width">
+                <header class="section-heading">
+                    <div>
+                        <p class="eyebrow">Imunização nos municípios</p>
+                        <h2 id="vaccine-cities-title">Salas de vacina e campanhas vacinais na região</h2>
+                        <p class="section-description">Confira os locais, horários de referência e campanhas de imunização no Alto Tietê.</p>
+                    </div>
+                    <a class="button button--secondary" href="campanhas.html">Ver todas as campanhas →</a>
+                </header>
+
+                <div class="campaign-grid" id="vaccine-grid" aria-live="polite"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="page-width footer-inner">
+            <a class="brand brand--footer" href="index.html" aria-label="Alto Tietê em Rede, início">
+                <span class="brand-mark" aria-hidden="true">AT</span>
+                <span class="brand-copy">
+                    <strong>Alto Tietê <span>em rede</span></strong>
+                    <small>Informação pública perto de você</small>
+                </span>
+            </a>
+            <p>Projeto informativo independente. Confirme serviços, horários e elegibilidade nos canais oficiais.</p>
+            <span class="footer-year">© 2026 · Alto Tietê, SP</span>
+        </div>
+    </footer>
+</body>
+</html>
+

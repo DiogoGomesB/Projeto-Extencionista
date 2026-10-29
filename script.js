@@ -8,11 +8,11 @@ const campaigns = [
         category: "Novembro Azul",
         status: "proxima",
         statusLabel: "Vem aí · Novembro",
-        title: "Novembro Azul: prevenção e cuidado integral à saúde do homem",
-        summary: "As UBSs e unidades UNICA iniciam em novembro a intensificação de testes rápidos de ISTs, aferição de pressão e glicemia, triagem odontológica e atualização vacinal para o público masculino.",
-        detail: "Mutirões urológicos e solicitações de exames preventivos (como PSA e ultrassom) seguem os protocolos do SUS e agendamento pelo SIS 160.",
+        title: "Novembro Azul: prevenção à saúde do homem",
+        summary: "Testes rápidos, aferição de pressão/glicemia e atualização vacinal nas UBSs e unidades UNICA.",
+        detail: "Agendamentos urológicos pelo SIS 160 e nas UBSs.",
         url: "https://www.mogidascruzes.sp.gov.br/servicos/saude",
-        linkLabel: "Acompanhar agenda na Prefeitura"
+        linkLabel: "Ver no site da Prefeitura"
     },
     {
         city: "suzano",
@@ -20,11 +20,11 @@ const campaigns = [
         category: "Novembro Azul",
         status: "proxima",
         statusLabel: "Vem aí · Novembro",
-        title: "Campanha Novembro Azul terá coleta de PSA e Dia D nas UBSs",
-        summary: "A Secretaria Municipal de Saúde prepara mobilização nas 24 UBSs e USFs com foco na coleta de exames preventivos (PSA), saúde bucal e controle de hipertensão e diabetes.",
-        detail: "Está previsto plantão especial aos sábados (Dia D) no mês de novembro para atender trabalhadores que não conseguem ir ao posto durante a semana.",
+        title: "Coleta de PSA e Dia D nas UBSs em novembro",
+        summary: "Mobilização nas 24 UBSs e USFs com foco em exames preventivos masculinos e controle de pressão e diabetes.",
+        detail: "Previsão de plantão aos sábados (Dia D) em novembro.",
         url: "https://suzano.sp.gov.br/saude/",
-        linkLabel: "Ver portal da Saúde de Suzano"
+        linkLabel: "Ver portal da Saúde"
     },
     {
         city: "itaqua",
@@ -32,11 +32,11 @@ const campaigns = [
         category: "Novembro Azul",
         status: "proxima",
         statusLabel: "Vem aí · Novembro",
-        title: "Saúde do Homem e intensificação contra a dengue no pré-verão",
-        summary: "A rede municipal prepara ações do Novembro Azul nas UBSs e USFs aliadas a mutirões de orientação e vistoria preventiva contra focos do Aedes aegypti antes do período chuvoso.",
-        detail: "Procure a unidade de saúde mais próxima com RG, CPF e Cartão SUS para check-up masculino e atualização de doses pendentes.",
+        title: "Saúde do Homem e prevenção contra a dengue",
+        summary: "Check-up masculino nas UBSs/USFs aliado a mutirões preventivos contra o Aedes aegypti.",
+        detail: "Leve RG, CPF e Cartão SUS à unidade mais próxima.",
         url: "https://www.itaquaquecetuba.sp.gov.br/",
-        linkLabel: "Consultar portal de Itaquaquecetuba"
+        linkLabel: "Ver portal da Prefeitura"
     },
     {
         city: "aruja",
@@ -44,11 +44,11 @@ const campaigns = [
         category: "Novembro Azul",
         status: "proxima",
         statusLabel: "Vem aí · Novembro",
-        title: "Mutirões de saúde masculina e prevenção nas USFs",
-        summary: "A Secretaria de Saúde programa ações descentralizadas para novembro nas unidades do Parque Rodrigo Barreto, Mirante, Jardim Emília, Nova Arujá e Vila Pilar.",
-        detail: "A programação prevê coleta de exames laboratoriais, testes rápidos, aferição de pressão arterial e atualização da carteira vacinal.",
+        title: "Mutirões de saúde masculina nas USFs",
+        summary: "Exames laboratoriais, testes rápidos e vacinação nas unidades do Barreto, Mirante, Emília e Nova Arujá.",
+        detail: "Atendimento descentralizado nos bairros em novembro.",
         url: "https://portaldenoticias.prefeituradearuja.sp.gov.br/noticias/category/secretaria-municipal-de-saude/",
-        linkLabel: "Ver notícias da Saúde de Arujá"
+        linkLabel: "Ver notícias de Arujá"
     },
     {
         city: "poa",
@@ -56,11 +56,11 @@ const campaigns = [
         category: "Novembro Azul",
         status: "proxima",
         statusLabel: "Vem aí · Novembro",
-        title: "Mobilização de saúde do homem e multivacinação nas UBSs",
-        summary: "Após o encerramento do Corujão de outubro, Poá direciona as equipes das UBSs (Calmon Viana, Nova Poá, Vila Varela e Jardim América) para os exames preventivos masculinos.",
-        detail: "Acompanhe no site oficial a divulgação de pontos volantes na Praça da Bíblia e os horários de coleta laboratorial.",
+        title: "Saúde do homem e multivacinação nas UBSs",
+        summary: "Exames preventivos masculinos nas UBSs Calmon Viana, Nova Poá, Vila Varela e Jardim América.",
+        detail: "Ações também previstas na Praça da Bíblia.",
         url: "https://poa.sp.gov.br/",
-        linkLabel: "Acessar portal da Prefeitura de Poá"
+        linkLabel: "Acessar Prefeitura de Poá"
     },
     {
         city: "ferraz",
@@ -68,11 +68,11 @@ const campaigns = [
         category: "Novembro Azul",
         status: "proxima",
         statusLabel: "Vem aí · Novembro",
-        title: "Prevenção ao câncer de próstata e vacinação extramuros",
-        summary: "As unidades CSII, Santo Antônio, Margarida e CDHU preparam ações educativas e triagem para o público masculino, além de campanhas de imunização em parceria com empresas locais.",
-        detail: "Dúvidas sobre ações extramuros podem ser tratadas com a Vigilância Epidemiológica pelo telefone (11) 4674-7800.",
+        title: "Prevenção ao câncer de próstata e vacinação",
+        summary: "Triagem masculina nas unidades CSII, Santo Antônio, Margarida e CDHU e ações em empresas.",
+        detail: "Vigilância Epidemiológica: (11) 4674-7800.",
         url: "https://ferrazdevasconcelos.sp.gov.br/web/categoria/saude/",
-        linkLabel: "Ver avisos da Secretaria de Saúde"
+        linkLabel: "Ver avisos da Saúde"
     },
     {
         city: "guararema",
@@ -80,11 +80,11 @@ const campaigns = [
         category: "Vacina em Movimento",
         status: "proxima",
         statusLabel: "Vem aí · Novembro",
-        title: "Ações itinerantes e prevenção do Novembro Azul nos bairros",
-        summary: "Guararema organiza para novembro o reforço de exames preventivos masculinos e novas etapas do programa 'Vacina em Movimento' em pontos comunitários.",
-        detail: "O atendimento regular segue de segunda a sexta na UBS Lambari (7h às 17h), UBS Jardim Dulce e CESAP Nogueira. Informações: (11) 4693-8040.",
+        title: "Vacina em Movimento e Novembro Azul",
+        summary: "Ações itinerantes nos bairros e atendimento na UBS Lambari, UBS Jardim Dulce e CESAP Nogueira.",
+        detail: "Informações da Saúde: (11) 4693-8040.",
         url: "https://guararema.sp.gov.br/noticias/saude",
-        linkLabel: "Acompanhar notícias de Guararema"
+        linkLabel: "Ver notícias de Guararema"
     },
     {
         city: "santa-isabel",
@@ -92,11 +92,11 @@ const campaigns = [
         category: "Novembro Azul",
         status: "proxima",
         statusLabel: "Vem aí · Novembro",
-        title: "Saúde preventiva do homem e atualização vacinal de fim de ano",
-        summary: "As UBSs municipais iniciam em novembro o acolhimento direcionado ao diagnóstico precoce do câncer de próstata e revisão das cadernetas de vacinação de adultos e idosos.",
-        detail: "Leve Cartão SUS, documento com foto e comprovante de residência à unidade de saúde de referência do seu bairro.",
+        title: "Saúde preventiva do homem e revisão vacinal",
+        summary: "Acolhimento preventivo masculino e atualização da carteira vacinal de adultos e idosos nas UBSs.",
+        detail: "Leve Cartão SUS e documento com foto à sua UBS.",
         url: "https://santaisabel.sp.gov.br/secretarias/secretaria-da-saude/",
-        linkLabel: "Consultar Secretaria de Saúde"
+        linkLabel: "Consultar Secretaria"
     },
 
     // =========================================================================
@@ -108,35 +108,35 @@ const campaigns = [
         category: "Vacinação HPV",
         status: "vigente",
         statusLabel: "Em andamento · Até 31/12",
-        title: "Resgate vacinal contra HPV para jovens de 15 a 19 anos",
-        summary: "Jovens de 15 a 19 anos que ainda não receberam a vacina contra o HPV podem procurar qualquer UBS até 31 de dezembro de 2026. A rotina segue fixa para a faixa de 9 a 14 anos.",
-        detail: "Apresente RG, CPF, Cartão SUS e caderneta de vacinação. Menores de idade devem estar acompanhados por um responsável legal.",
+        title: "Resgate vacinal contra HPV (15 a 19 anos)",
+        summary: "Jovens de 15 a 19 anos ainda não vacinados podem se imunizar nas UBSs até 31/12/2026. Rotina fixa de 9 a 14 anos.",
+        detail: "Leve RG, CPF, Cartão SUS e caderneta.",
         url: "https://www.itaquaquecetuba.sp.gov.br/noticias/ver.php?id=5711",
-        linkLabel: "Ver orientações da Prefeitura"
+        linkLabel: "Ver orientações"
     },
     {
         city: "poa",
         cityName: "Poá",
         category: "Outubro Rosa",
         status: "vigente",
-        statusLabel: "Em andamento · Reta final",
-        title: "Corujão da Saúde da Mulher com atendimento até as 21h",
-        summary: "Últimos dias do horário estendido de outubro no Centro de Saúde da Mulher Poaense, com oferta de Papanicolau, encaminhamento de mamografia e testes rápidos.",
-        detail: "Atendimento noturno disponível até o encerramento de outubro. Confirme documentos necessários no comunicado oficial da Prefeitura.",
+        statusLabel: "Em andamento",
+        title: "Corujão da Saúde da Mulher até as 21h",
+        summary: "Horário estendido no Centro de Saúde da Mulher Poaense com Papanicolau, mamografia e testes rápidos.",
+        detail: "Atendimento noturno até o fim de outubro.",
         url: "https://poa.sp.gov.br/prefeitura-de-poa-anuncia-corujao-da-saude-da-mulher-com-atendimento-ate-as-21h-durante-todo-o-mes-de-outubro/",
-        linkLabel: "Ver comunicado da Prefeitura"
+        linkLabel: "Ver comunicado"
     },
     {
         city: "santa-isabel",
         cityName: "Santa Isabel",
         category: "Vacinação",
         status: "vigente",
-        statusLabel: "Em andamento · 2026/2027",
-        title: "Calendário vacinal municipal 2026/2027 nas UBSs",
-        summary: "A Secretaria Municipal de Saúde mantém ativo o cronograma do Programa Nacional de Imunizações (PNI) para crianças, adolescentes, gestantes e idosos em todas as UBSs.",
-        detail: "Inclui doses contra poliomielite, tríplice viral, hepatites, febre amarela, influenza, dengue e HPV conforme faixa etária.",
+        statusLabel: "Em andamento",
+        title: "Calendário vacinal municipal 2026/2027",
+        summary: "Vacinas de rotina do PNI disponíveis para crianças, adolescentes, gestantes e idosos nas UBSs.",
+        detail: "Inclui pólio, tríplice viral, hepatites, gripe, dengue e HPV.",
         url: "https://santaisabel.sp.gov.br/secretarias/secretaria-da-saude/calendario-vacinal-",
-        linkLabel: "Ver calendário da Prefeitura"
+        linkLabel: "Ver calendário"
     },
     {
         city: "suzano",
@@ -144,11 +144,11 @@ const campaigns = [
         category: "Salas de Vacina",
         status: "vigente",
         statusLabel: "Em andamento",
-        title: "Salas de vacinação abertas de segunda a sexta nas UBSs",
-        summary: "A rede municipal disponibiliza imunização de rotina e atualização de cadernetas em atraso em todas as regiões da cidade, além da reta final das ações do Outubro Rosa.",
-        detail: "Horário habitual das salas de vacina: das 8h às 16h. Leve documento oficial com foto, CPF, Cartão SUS e caderneta.",
+        title: "Salas de vacinação abertas nas UBSs",
+        summary: "Imunização de rotina e atualização de cadernetas em todas as regiões da cidade.",
+        detail: "Segunda a sexta, das 8h às 16h, com Cartão SUS e RG.",
         url: "https://suzano.sp.gov.br/saude/programacao-outubro-rosa/",
-        linkLabel: "Consultar programação oficial"
+        linkLabel: "Consultar programação"
     },
     {
         city: "biritiba",
@@ -156,35 +156,35 @@ const campaigns = [
         category: "Salas de Vacina",
         status: "vigente",
         statusLabel: "Em andamento",
-        title: "Atendimento vacinal no CSIII e unidades ESF do município",
-        summary: "A imunização de rotina acontece no Centro de Especialidades (CSIII – Jardim Takebe) e nas ESFs Jardim dos Eucaliptos, Cruz das Almas e Irohy.",
-        detail: "Atenção: verifique avisos recentes antes de ir à ESF Jardim Yoneda, que passou por suspensão temporária na sala de vacina.",
+        title: "Vacinação no CSIII e unidades ESF",
+        summary: "Atendimento no CSIII (Jardim Takebe) e nas ESFs Jardim dos Eucaliptos, Cruz das Almas e Irohy.",
+        detail: "Atenção: verifique avisos sobre a ESF Jardim Yoneda.",
         url: "https://www.biritibamirim.sp.gov.br/site/news.php",
-        linkLabel: "Ver notícias da Prefeitura"
+        linkLabel: "Ver notícias"
     },
     {
         city: "ferraz",
         cityName: "Ferraz de Vasconcelos",
-        category: "Saúde Animal e Zoonoses",
+        category: "Zoonoses",
         status: "vigente",
         statusLabel: "Em andamento",
-        title: "Vacinação antirrábica para cães e gatos e vigilância contra dengue",
-        summary: "A Prefeitura mantém ações permanentes de imunização antirrábica junto à Clínica Veterinária Municipal e postos fixos, além do monitoramento de arboviroses nos bairros.",
-        detail: "Consulte na editoria de Saúde os dias de aplicação e critérios para agendamento de atendimento veterinário gratuito.",
+        title: "Vacinação antirrábica e combate à dengue",
+        summary: "Imunização gratuita para cães e gatos na Clínica Veterinária Municipal e vigilância contra arboviroses.",
+        detail: "Confira dias e agendamentos no portal da Saúde.",
         url: "https://ferrazdevasconcelos.sp.gov.br/web/categoria/saude/",
-        linkLabel: "Ver notícias da Secretaria"
+        linkLabel: "Ver na Secretaria"
     },
     {
         city: "salesopolis",
         cityName: "Salesópolis",
-        category: "Imunização e Mamografia",
+        category: "Imunização",
         status: "vigente",
         statusLabel: "Em andamento",
-        title: "Vacinação nas UBSs Centro e Remédios e consulta às Carretas de SP",
-        summary: "As vacinas do calendário SUS são aplicadas na UBS Centro (Rua N. Sra. de Fátima) e na UBS Nossa Sra. do Remédio. Para mamografia móvel estadual, consulte o roteiro Mulheres de Peito.",
-        detail: "Contatos das unidades de Salesópolis: UBS Centro (11) 4696-1861 e UBS Remédios (11) 4696-5145.",
+        title: "Vacinação nas UBSs e Carretas da Mamografia",
+        summary: "Doses de rotina aplicadas nas UBSs Centro e Nossa Sra. do Remédio. Consulte também o roteiro Mulheres de Peito.",
+        detail: "UBS Centro: (11) 4696-1861 · Remédios: (11) 4696-5145.",
         url: "https://www.poupatempo.sp.gov.br/carta/B7ED6C20-6D1B-481B-8693-35AD62D16E42",
-        linkLabel: "Consultar itinerário e informações"
+        linkLabel: "Consultar itinerário"
     },
     {
         city: "guararema",
@@ -192,9 +192,9 @@ const campaigns = [
         category: "Atenção Básica",
         status: "vigente",
         statusLabel: "Em andamento",
-        title: "Imunização de rotina e acompanhamento preventivo nas UBSs",
-        summary: "As salas de vacina da UBS Lambari, UBS Jardim Dulce e o atendimento especializado no CESAP Nogueira funcionam de segunda a sexta-feira para atualização vacinal.",
-        detail: "A UBS Lambari (Av. Francisca Lerário, 955) atende das 7h às 17h. Telefone de suporte: (11) 4693-3448.",
+        title: "Imunização de rotina nas UBSs",
+        summary: "Salas de vacina abertas de segunda a sexta na UBS Lambari, UBS Jardim Dulce e CESAP Nogueira.",
+        detail: "UBS Lambari: 7h às 17h · Tel.: (11) 4693-3448.",
         url: "https://guararema.sp.gov.br/noticias/saude",
         linkLabel: "Ver notícias de Saúde"
     },
@@ -207,24 +207,24 @@ const campaigns = [
         cityName: "Mogi das Cruzes",
         category: "Outubro Rosa",
         status: "recente",
-        statusLabel: "Realizada em 24/10",
-        title: "Mutirão de ginecologia, Papanicolau e vacinação nas UBSs",
-        summary: "No sábado de 24 de outubro de 2026, a Prefeitura realizou plantão das 8h às 17h nas UBSs Jundiapeba, Ponte Grande, Alto Ipiranga e Vila Suíssa com exames por livre demanda.",
-        detail: "Mulheres que não puderam comparecer ao mutirão ainda podem agendar coleta de Papanicolau diretamente na UBS mais próxima.",
+        statusLabel: "Realizada · 24/10",
+        title: "Mutirão de ginecologia e vacinação nas UBSs",
+        summary: "Plantão realizado nas UBSs Jundiapeba, Ponte Grande, Alto Ipiranga e Vila Suíssa com Papanicolau sem agendamento.",
+        detail: "Exames preventivos seguem disponíveis na rotina das UBSs.",
         url: "https://www.mogidascruzes.sp.gov.br/noticia/prefeitura-de-mogi-amplia-acoes-de-prevencao-e-cuidado-as-mulheres-durante-o-outubro-rosa",
-        linkLabel: "Ver registro da ação na Prefeitura"
+        linkLabel: "Ver notícia oficial"
     },
     {
         city: "aruja",
         cityName: "Arujá",
         category: "Outubro Rosa",
         status: "recente",
-        statusLabel: "Realizada em 17/10",
-        title: "Corre por Elas: corrida e caminhada de conscientização",
-        summary: "Mobilização gratuita promovida em 17 de outubro de 2026 na Avenida Mário Covas reuniu moradores em prol da prevenção ao câncer de mama e do colo do útero.",
-        detail: "Os exames preventivos de rotina continuam disponíveis durante todo o ano nas Unidades de Saúde da Família (USFs) de Arujá.",
+        statusLabel: "Realizada · 17/10",
+        title: "Corre por Elas: corrida e caminhada",
+        summary: "Mobilização gratuita na Av. Mário Covas reuniu moradores pela prevenção ao câncer de mama.",
+        detail: "Exames preventivos continuam disponíveis nas USFs.",
         url: "https://portaldenoticias.prefeituradearuja.sp.gov.br/noticias/category/secretaria-municipal-de-esportes/",
-        linkLabel: "Consultar arquivo da Prefeitura"
+        linkLabel: "Ver no portal"
     },
     {
         city: "biritiba",
@@ -232,11 +232,11 @@ const campaigns = [
         category: "Comunicado",
         status: "recente",
         statusLabel: "Aviso recente",
-        title: "Pausa técnica para capacitação e manutenção na ESF Jardim Yoneda",
-        summary: "A Secretaria de Saúde emitiu comunicado informando a suspensão temporária da sala de vacinação da ESF Jardim Yoneda e treinamentos pontuais das equipes da rede.",
-        detail: "Durante manutenções em unidades específicas, o atendimento vacinal é absorvido pelo CSIII no Jardim Takebe.",
+        title: "Manutenção na sala de vacina da ESF Yoneda",
+        summary: "Suspensão temporária para manutenção e capacitação na sala de vacinação da ESF Jardim Yoneda.",
+        detail: "Atendimento absorvido pelo CSIII no Jardim Takebe.",
         url: "https://www.biritibamirim.sp.gov.br/site/news.php",
-        linkLabel: "Conferir comunicados oficiais"
+        linkLabel: "Ver comunicados"
     },
     {
         city: "ferraz",
@@ -244,35 +244,35 @@ const campaigns = [
         category: "Multivacinação",
         status: "recente",
         statusLabel: "Ação recente",
-        title: "Dia D de atualização vacinal e imunização de servidores públicos",
-        summary: "A Vigilância Epidemiológica promoveu mobilizações recentes de resgate vacinal contra o HPV para jovens e campanhas internas de imunização para servidores municipais.",
-        detail: "As doses remanescentes permanecem disponíveis de segunda a sexta-feira nas UBSs de referência do município.",
+        title: "Dia D de multivacinação e resgate HPV",
+        summary: "Mobilização recente da Vigilância Epidemiológica para jovens e servidores municipais.",
+        detail: "Doses seguem disponíveis de segunda a sexta nas UBSs.",
         url: "https://ferrazdevasconcelos.sp.gov.br/web/categoria/saude/",
-        linkLabel: "Ver histórico na Secretaria"
+        linkLabel: "Ver histórico"
     },
     {
         city: "santa-isabel",
         cityName: "Santa Isabel",
-        category: "Esclarecimento Oficial",
+        category: "Comunicado",
         status: "recente",
-        statusLabel: "Comunicado recente",
-        title: "Orientação sobre alertas de atraso vacinal e Dia D de Multivacinação",
-        summary: "Após o Dia D de atualização de cadernetas, a Secretaria de Saúde orientou moradores que receberam notificações automáticas a conferirem o registro físico diretamente nas UBSs.",
-        detail: "A checagem presencial na UBS garante a baixa correta das doses no sistema nacional do Ministério da Saúde.",
+        statusLabel: "Aviso recente",
+        title: "Conferência presencial de cadernetas nas UBSs",
+        summary: "Orientação pós-Dia D para moradores validarem o registro físico de vacinação diretamente nos postos.",
+        detail: "Garante a baixa correta no sistema do Ministério da Saúde.",
         url: "https://santaisabel.sp.gov.br/secretarias/secretaria-da-saude/",
-        linkLabel: "Ler orientações no portal"
+        linkLabel: "Ler orientação"
     },
     {
         city: "salesopolis",
         cityName: "Salesópolis",
-        category: "Portal VaciVida",
+        category: "VaciVida",
         status: "recente",
-        statusLabel: "Orientação permanente",
-        title: "Emissão digital de carteira vacinal pelo Meu SUS Digital e VaciVida",
-        summary: "Moradores que participaram das campanhas anteriores de gripe, Covid-19 e febre amarela em Salesópolis podem emitir o certificado atualizado pelos portais oficiais.",
-        detail: "Caso alguma dose aplicada nas UBSs locais não conste no aplicativo, apresente o comprovante físico na UBS Centro ou Remédios.",
+        statusLabel: "Serviço digital",
+        title: "Carteira digital pelo Meu SUS Digital e VaciVida",
+        summary: "Emissão online do certificado de vacinas aplicadas em campanhas anteriores no município.",
+        detail: "Dúvidas presenciais nas UBSs Centro e Remédios.",
         url: "https://www.salesopolis.sp.gov.br/",
-        linkLabel: "Acessar Prefeitura de Salesópolis"
+        linkLabel: "Acessar Prefeitura"
     }
 ];
 

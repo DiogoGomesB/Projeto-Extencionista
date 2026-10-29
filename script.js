@@ -469,5 +469,67 @@ themeToggle?.addEventListener("click", () => {
     applyTheme(nextTheme, true);
 });
 
+function initializeDeveloperCards() {
+    const devCards = document.querySelectorAll(".dev-card");
+    const fallbackExtensions = ["jpeg", "png", "webp"];
+
+    devCards.forEach((card) => {
+        const avatar = card.querySelector(".dev-avatar");
+        const img = avatar?.querySelector("img");
+        const fallback = avatar?.querySelector(".dev-avatar__fallback");
+        const nameHeading = card.querySelector(".dev-name");
+
+        if (nameHeading && fallback) {
+            const nameText = nameHeading.textContent?.trim() ?? "";
+            if (nameText && !nameText.toLocaleLowerCase("pt-BR").startsWith("nome do integrante")) {
+                const parts = nameText.split(/\s+/).filter(Boolean);
+                const initials = parts.length > 1
+                    ? `${parts[0][0]}${parts[parts.length - 1][0]}`
+                    : parts[0].slice(0, 2);
+                fallback.textContent = initials.toUpperCase();
+            }
+        }
+
+        if (!img || !avatar) return;
+
+        let extIndex = 0;
+        const originalSrc = img.getAttribute("src") ?? "";
+        const baseWithoutExt = originalSrc.replace(/\.(jpe?g|png|webp)$/i, "");
+
+        const markLoaded = () => {
+            if (img.naturalWidth > 0) {
+                avatar.classList.add("has-photo");
+                avatar.classList.remove("no-photo");
+            } else {
+                avatar.classList.add("no-photo");
+                avatar.classList.remove("has-photo");
+            }
+        };
+
+        const markError = () => {
+            if (baseWithoutExt && originalSrc.startsWith("fotos/") && extIndex < fallbackExtensions.length) {
+                const nextExt = fallbackExtensions[extIndex];
+                extIndex += 1;
+                img.src = `${baseWithoutExt}.${nextExt}`;
+                return;
+            }
+            avatar.classList.add("no-photo");
+            avatar.classList.remove("has-photo");
+        };
+
+        img.addEventListener("load", markLoaded);
+        img.addEventListener("error", markError);
+
+        if (img.complete) {
+            if (img.naturalWidth > 0) {
+                markLoaded();
+            } else {
+                markError();
+            }
+        }
+    });
+}
+
 renderCampaigns();
 initializeTheme();
+initializeDeveloperCards();

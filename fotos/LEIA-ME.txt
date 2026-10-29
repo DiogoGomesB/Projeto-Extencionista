@@ -1,0 +1,26 @@
+======================================================================
+PASTA DE FOTOS DOS 14 DESENVOLVEDORES
+======================================================================
+
+Coloque as fotos dos 14 integrantes dentro desta pasta ("fotos") com os
+seguintes nomes:
+
+  integrante-01.jpg   (ou .png / .jpeg / .webp)
+  integrante-02.jpg
+  integrante-03.jpg
+  integrante-04.jpg
+  integrante-05.jpg
+  integrante-06.jpg
+  integrante-07.jpg
+  integrante-08.jpg
+  integrante-09.jpg
+  integrante-10.jpg
+  integrante-11.jpg
+  integrante-12.jpg
+  integrante-13.jpg
+  integrante-14.jpg
+
+O sistema detecta automaticamente se a foto é .jpg, .jpeg, .png ou .webp!
+Enquanto alguma foto ainda não for colocada aqui, o site exibirá
+automaticamente o número ou as iniciais do nome da pessoa no círculo.
+

@@ -474,8 +474,8 @@ themeToggle?.addEventListener("click", () => {
 });
 
 function initializeDeveloperCards() {
-    const devCards = document.querySelectorAll(".dev-card");
-    const fallbackExtensions = ["jpeg", "png", "webp"];
+    const devCards = document.querySelectorAll(".dev-card, .coordinator-card");
+    const extensions = ["jpg", "jpeg", "png", "webp"];
 
     devCards.forEach((card) => {
         const avatar = card.querySelector(".dev-avatar");
@@ -496,9 +496,29 @@ function initializeDeveloperCards() {
 
         if (!img || !avatar) return;
 
-        let extIndex = 0;
         const originalSrc = img.getAttribute("src") ?? "";
-        const baseWithoutExt = originalSrc.replace(/\.(jpe?g|png|webp)$/i, "");
+        const fallbackSrc = img.dataset.fallbackSrc ?? "";
+
+        const candidates = [];
+        const addCandidates = (path) => {
+            if (!path) return;
+            if (!candidates.includes(path)) {
+                candidates.push(path);
+            }
+            const base = path.replace(/\.(jpe?g|png|webp)$/i, "");
+            extensions.forEach((ext) => {
+                const candidate = `${base}.${ext}`;
+                if (!candidates.includes(candidate)) {
+                    candidates.push(candidate);
+                }
+            });
+        };
+
+        addCandidates(originalSrc);
+        addCandidates(fallbackSrc);
+
+        let candidateIndex = candidates.indexOf(originalSrc);
+        if (candidateIndex === -1) candidateIndex = 0;
 
         const markLoaded = () => {
             if (img.naturalWidth > 0) {
@@ -511,10 +531,9 @@ function initializeDeveloperCards() {
         };
 
         const markError = () => {
-            if (baseWithoutExt && originalSrc.startsWith("fotos/") && extIndex < fallbackExtensions.length) {
-                const nextExt = fallbackExtensions[extIndex];
-                extIndex += 1;
-                img.src = `${baseWithoutExt}.${nextExt}`;
+            candidateIndex += 1;
+            if (candidateIndex < candidates.length) {
+                img.src = candidates[candidateIndex];
                 return;
             }
             avatar.classList.add("no-photo");

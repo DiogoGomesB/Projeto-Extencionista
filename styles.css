@@ -1500,6 +1500,108 @@ h1 span {
 }
 
 /* ==========================================================================
+   COORDENAÇÃO DO PROJETO
+   ========================================================================== */
+.coordinator-section {
+    padding-bottom: 24px;
+}
+
+.coordinator-card {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    padding: 28px 32px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--small-shadow);
+    transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.coordinator-card::before {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 5px;
+    background: linear-gradient(180deg, var(--accent) 0%, var(--success) 50%, var(--brand) 100%);
+    content: "";
+}
+
+.coordinator-card:hover {
+    transform: translateY(-3px);
+    border-color: color-mix(in srgb, var(--brand) 40%, var(--line));
+    box-shadow: var(--card-hover-shadow);
+}
+
+.dev-avatar--coord {
+    width: 98px;
+    height: 98px;
+    flex-shrink: 0;
+    margin-bottom: 0;
+    background: linear-gradient(135deg, #ffcd07 0%, #168821 50%, #1351b4 100%);
+    box-shadow: 0 10px 24px rgba(19, 81, 180, 0.2);
+}
+
+.coordinator-card__body {
+    flex: 1;
+    min-width: 0;
+}
+
+.coord-badge-wrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.dev-badge--coord {
+    background: var(--brand-soft);
+    color: var(--brand);
+    margin-bottom: 0;
+}
+
+:root[data-theme="dark"] .dev-badge--coord {
+    background: var(--brand-soft);
+    color: var(--brand);
+}
+
+.coord-pill {
+    display: inline-flex;
+    align-items: center;
+    min-height: 24px;
+    padding: 0 10px;
+    border-radius: 999px;
+    background: var(--surface-soft);
+    color: var(--muted);
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.coord-name {
+    font-size: 1.32rem;
+    font-weight: 800;
+    color: var(--text);
+    margin: 0 0 4px;
+}
+
+.coord-role {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--brand);
+    margin: 0 0 10px;
+}
+
+.coord-desc {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.88rem;
+    line-height: 1.55;
+    max-width: 760px;
+}
+
+/* ==========================================================================
    RESPONSIVIDADE (TABLET E MOBILE OTIMIZADO)
    ========================================================================== */
 @media (max-width: 1040px) {
@@ -1866,6 +1968,37 @@ h1 span {
     .team-grid {
         grid-template-columns: 1fr;
         gap: 10px;
+    }
+
+    /* Coordenação em formato amigável no celular */
+    .coordinator-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 22px 18px;
+        gap: 16px;
+    }
+
+    .coordinator-card::before {
+        inset: 0 0 auto 0;
+        width: 100%;
+        height: 4px;
+    }
+
+    .coord-badge-wrap {
+        justify-content: center;
+    }
+
+    .dev-avatar--coord {
+        width: 76px;
+        height: 76px;
+    }
+
+    .coord-name {
+        font-size: 1.15rem;
+    }
+
+    .coord-desc {
+        font-size: 0.82rem;
     }
 
     .dev-card {

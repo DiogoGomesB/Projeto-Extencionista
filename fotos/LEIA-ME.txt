@@ -1,26 +1,29 @@
 ======================================================================
-PASTA DE FOTOS DOS 14 DESENVOLVEDORES
+PASTA DE FOTOS DA EQUIPE E COORDENAÇÃO (ALTO TIETÊ EM REDE)
 ======================================================================
 
-Coloque as fotos dos 14 integrantes dentro desta pasta ("fotos") com os
-seguintes nomes:
+Coordenação do Projeto:
+- Renata Alves Orselli -> RenataOrselli.png (ou renataalves.png) [CONECTADO]
 
-  integrante-01.jpg   (ou .png / .jpeg / .webp)
-  integrante-02.jpg
-  integrante-03.jpg
-  integrante-04.jpg
-  integrante-05.jpg
-  integrante-06.jpg
-  integrante-07.jpg
-  integrante-08.jpg
-  integrante-09.jpg
-  integrante-10.jpg
-  integrante-11.jpg
-  integrante-12.jpg
-  integrante-13.jpg
-  integrante-14.jpg
+Equipe de Estudantes (13 integrantes em ordem alfabética):
+01. Adrielle Stollemberger Takata -> AdrielleTakata.png       [CONECTADO]
+02. Davi Gama dos Santos          -> DaviGama.png             [CONECTADO]
+03. Diogo Gomes Barbosa           -> DiogoGomes.jpg           [CONECTADO]
+04. Eudenis de Souza Vieira       -> EudenisVieira.png        [CONECTADO]
+05. Gabriel Januário Alves        -> GabrielJanuario.png      [CONECTADO]
+06. Jean Carlos Silva de Almeida  -> JeanCarlos.jpg/png       [Exibindo iniciais "JA"]
+07. João Guilherme Cravo dos Santos -> JoaoGuilherme.png      [CONECTADO]
+08. João Pedro Barreto da Silva   -> JoaoPedroBarreto.png     [CONECTADO]
+09. João Pedro Garcia Almeida     -> JoaoPedroGarcia.png      [CONECTADO]
+10. Nicolas Santos Silva          -> NicolasSantos.jpg/png    [Exibindo iniciais "NS"]
+11. Samir Abdul Khalek            -> SamirKhalek.png          [CONECTADO]
+12. Samuel Allan Nunes da Cunha   -> SamuelAllan.png          [CONECTADO]
+13. Victor Almeida de Aquino      -> VictorAquino.png         [CONECTADO]
 
-O sistema detecta automaticamente se a foto é .jpg, .jpeg, .png ou .webp!
-Enquanto alguma foto ainda não for colocada aqui, o site exibirá
-automaticamente o número ou as iniciais do nome da pessoa no círculo.
-
+----------------------------------------------------------------------
+DICAS IMPORTANTES:
+- Aceita qualquer formato comum: .jpg, .jpeg, .png ou .webp.
+- Enquanto Jean Carlos ou Nicolas ainda não tiverem foto na pasta, o site exibe
+  automaticamente um círculo com as iniciais do nome ("JA" e "NS").
+- Compatível 100% com GitHub Pages (sem espaços em nomes de arquivos).
+======================================================================

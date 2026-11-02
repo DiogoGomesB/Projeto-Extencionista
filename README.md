@@ -1,8 +1,47 @@
 # Alto Tietê em Rede
 
-Página informativa estática sobre campanhas de saúde, vacinação e serviços públicos nos dez municípios do Alto Tietê. As notícias e orientações em destaque são classificadas por período (**Vão chegar · Novembro**, **Em andamento** e **Recentes / Anteriores**) e acompanhadas de links para as prefeituras e órgãos oficiais.
+> 🌐 **Acesse a plataforma online em:**  
+> 👉 **[https://diogogomesb.github.io/Projeto-Extencionista/](https://diogogomesb.github.io/Projeto-Extencionista/)**
 
-## Municípios e informações consultadas
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Acessar%20Site-1351b4?style=for-the-badge&logo=github)](https://diogogomesb.github.io/Projeto-Extencionista/)
+[![Equipe & Coordenação](https://img.shields.io/badge/Equipe-Coordenação%20%2B%2013%20Integrantes-168821?style=for-the-badge)](https://diogogomesb.github.io/Projeto-Extencionista/desenvolvedores.html)
+
+Plataforma informativa web sobre campanhas de saúde pública, vacinação e serviços municipais nos dez municípios do Alto Tietê (SP). As informações e orientações em destaque são classificadas por período (**Vão chegar · Novembro**, **Em andamento** e **Recentes / Anteriores**) e acompanhadas de links oficiais para as prefeituras e secretarias de saúde.
+
+---
+
+## 🔗 Links Rápidos de Acesso
+
+- 🏠 **Página Inicial:** [https://diogogomesb.github.io/Projeto-Extencionista/](https://diogogomesb.github.io/Projeto-Extencionista/)
+- 📢 **Campanhas de Saúde:** [https://diogogomesb.github.io/Projeto-Extencionista/campanhas.html](https://diogogomesb.github.io/Projeto-Extencionista/campanhas.html)
+- 💉 **Vacinação & Imunização:** [https://diogogomesb.github.io/Projeto-Extencionista/vacinacao.html](https://diogogomesb.github.io/Projeto-Extencionista/vacinacao.html)
+- 👥 **Equipe & Coordenação:** [https://diogogomesb.github.io/Projeto-Extencionista/desenvolvedores.html](https://diogogomesb.github.io/Projeto-Extencionista/desenvolvedores.html)
+
+---
+
+## 👥 Coordenação e Equipe
+
+### Coordenação do Projeto
+- **Renata Alves Orselli** — Coordenadora & Docente Orientadora
+
+### Integrantes do Grupo (13 estudantes em ordem alfabética)
+1. **Adrielle Stollemberger Takata**
+2. **Davi Gama dos Santos**
+3. **Diogo Gomes Barbosa**
+4. **Eudenis de Souza Vieira**
+5. **Gabriel Januário Alves**
+6. **Jean Carlos Silva de Almeida**
+7. **João Guilherme Cravo dos Santos**
+8. **João Pedro Barreto da Silva**
+9. **João Pedro Garcia Almeida**
+10. **Nicolas Santos Silva**
+11. **Samir Abdul Khalek**
+12. **Samuel Allan Nunes da Cunha**
+13. **Victor Almeida de Aquino**
+
+---
+
+## 🏛️ Municípios e Informações Consultadas
 
 - **Mogi das Cruzes:** preparação para o Novembro Azul (testes rápidos, aferição de pressão/glicemia, reforço vacinal nas UBSs e UNICAs e mutirões urológicos via SIS 160) e registro do mutirão de ginecologia, Papanicolau e vacinação realizado em 24 de outubro de 2026.
 - **Suzano:** mobilização do Novembro Azul com coleta de PSA e previsão de Dia D nas 24 UBSs/USFs, além das salas de vacinação de rotina (8h às 16h) e encerramento do Outubro Rosa.
@@ -15,21 +54,21 @@ Página informativa estática sobre campanhas de saúde, vacinação e serviços
 - **Biritiba Mirim:** rotina de vacinação no CSIII (Jardim Takebe) e unidades ESF, além do aviso recente sobre manutenção/suspensão temporária na sala de vacina da ESF Jardim Yoneda.
 - **Salesópolis:** vacinação de rotina nas UBSs Centro e Nossa Sra. do Remédio, consulta ao itinerário estadual das Carretas da Mamografia (Mulheres de Peito) e emissão digital via VaciVida / Meu SUS Digital.
 
-As informações foram consultadas e atualizadas em 28 de outubro de 2026. Programações, horários e disponibilidade podem mudar; confirme os detalhes nos canais oficiais antes de se deslocar. A página é uma iniciativa informativa independente e não representa as prefeituras.
+> *Nota:* As informações foram levantadas a partir de canais oficiais e prefeituras. Programações, horários e disponibilidade podem sofrer alterações municipais; confirme detalhes sempre nas unidades e canais governamentais antes de se deslocar.
 
-## Executar
+---
 
-Abra `index.html` em um navegador. O projeto usa HTML, CSS e JavaScript sem dependências, servidor ou processo de build. As fontes tipográficas (`Plus Jakarta Sans` e `Noto Sans`) são carregadas do Google Fonts; sem conexão, o navegador usa fontes locais alternativas.
+## 🚀 Como Executar Localmente
 
-## Recursos
+Basta abrir o arquivo `index.html` em qualquer navegador web moderno.  
+O projeto foi construído puramente com **HTML5**, **CSS3** e **JavaScript nativo**, sem necessidade de build, NodeJS ou dependências externas pesadas.
 
-- Layout moderno e responsivo para celulares, tablets e computadores.
-- Identidade visual inspirada no Padrão Digital de Governo (gov.br) com as cores do Brasil (azul, verde e amarelo-ouro), sem uso da marca ou do logotipo oficial.
-- Tema claro/escuro, seguindo a preferência do sistema e salvando a escolha no navegador.
-- Busca por texto, filtro rápido pelos 10 municípios do Alto Tietê (via seletor ou painel regional interativo) e filtro por período (`Todas`, `Vão chegar · Novembro`, `Em andamento`, `Recentes / Anteriores`).
-- Navegação por teclado, link para pular ao conteúdo, estados de foco e suporte a movimento reduzido.
-- Links para as fontes municipais, estaduais e federais consultadas.
+---
 
-## Atualização das informações
+## ✨ Recursos e Tecnologias
 
-As informações são cadastradas em `script.js`, no array `campaigns`. Cada item possui `city`, `cityName`, `category`, `status` (`"proxima"`, `"vigente"` ou `"recente"`), `statusLabel`, `title`, `summary`, `detail`, `url` e `linkLabel`. Atualize também a data de consulta deste README e a data exibida no `index.html`.
+- **Design Responsivo & Mobile First:** Adaptado com excelência para smartphones, tablets e desktops.
+- **Identidade Visual Acessível:** Inspirada no Padrão Digital de Governo (Gov.br) com a paleta oficial do Brasil (azul `#1351b4`, verde `#168821` e amarelo `#ffcd07`).
+- **Alternância de Tema (Claro / Escuro):** Respeita a preferência do sistema operacional e grava a escolha no `localStorage`.
+- **Filtros e Busca em Tempo Real:** Pesquisa textual, filtro de status (`Todas`, `Vão chegar`, `Em andamento`, `Recentes`) e seletor municipal por URL query params (`?cidade=mogi`).
+- **Acessibilidade e Usabilidade:** Skip-to-content, estados visuais de foco, tags semânticas ARIA e contraste adequado segundo diretrizes WCAG.

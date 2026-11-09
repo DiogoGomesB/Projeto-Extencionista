@@ -486,11 +486,15 @@ function initializeDeveloperCards() {
         if (nameHeading && fallback) {
             const nameText = nameHeading.textContent?.trim() ?? "";
             if (nameText && !nameText.toLocaleLowerCase("pt-BR").startsWith("nome do integrante")) {
-                const parts = nameText.split(/\s+/).filter(Boolean);
-                const initials = parts.length > 1
-                    ? `${parts[0][0]}${parts[parts.length - 1][0]}`
-                    : parts[0].slice(0, 2);
-                fallback.textContent = initials.toUpperCase();
+                const parts = nameText
+                    .split(/\s+/)
+                    .filter((word) => word && !/^(profa?|dra?|me|ma)\.?$/i.test(word));
+                if (parts.length > 0) {
+                    const initials = parts.length > 1
+                        ? `${parts[0][0]}${parts[parts.length - 1][0]}`
+                        : parts[0].slice(0, 2);
+                    fallback.textContent = initials.toUpperCase();
+                }
             }
         }
 

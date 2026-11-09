@@ -22,7 +22,7 @@ Plataforma informativa web sobre campanhas de saúde pública, vacinação e ser
 ## 👥 Coordenação e Equipe
 
 ### Coordenação do Projeto
-- **Renata Alves Orselli** — Coordenadora & Docente Orientadora
+- **Profa. Dra. Renata A. Orselli** — Coordenadora & Docente Orientadora
 
 ### Integrantes do Grupo (13 estudantes em ordem alfabética)
 1. **Adrielle Stollemberger Takata**

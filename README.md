@@ -41,20 +41,20 @@ Plataforma informativa web sobre campanhas de saúde pública, vacinação e ser
 
 ---
 
-## 🏛️ Municípios e Informações Consultadas
+## 🏛️ Municípios e Informações Consultadas (38 Ações Mapeadas)
 
-- **Mogi das Cruzes:** preparação para o Novembro Azul (testes rápidos, aferição de pressão/glicemia, reforço vacinal nas UBSs e UNICAs e mutirões urológicos via SIS 160) e registro do mutirão de ginecologia, Papanicolau e vacinação realizado em 24 de outubro de 2026.
-- **Suzano:** mobilização do Novembro Azul com coleta de PSA e previsão de Dia D nas 24 UBSs/USFs, além das salas de vacinação de rotina (8h às 16h) e encerramento do Outubro Rosa.
-- **Itaquaquecetuba:** resgate vacinal contra HPV para jovens de 15 a 19 anos vigente até 31 de dezembro de 2026 e preparação de ações de saúde do homem (Novembro Azul) e combate preventivo à dengue no pré-verão.
-- **Arujá:** mutirões descentralizados de saúde masculina e prevenção nas USFs para novembro e registro da mobilização Corre por Elas realizada em 17 de outubro de 2026.
-- **Poá:** reta final do Corujão da Saúde da Mulher (atendimento até as 21h em outubro) e transição para as ações do Novembro Azul e multivacinação nas UBSs e Praça da Bíblia.
-- **Ferraz de Vasconcelos:** programação de Novembro Azul e vacinação extramuros, vacinação antirrábica permanente junto à Clínica Veterinária Municipal e registro das ações recentes da Vigilância Epidemiológica.
-- **Guararema:** novas etapas do programa itinerante "Vacina em Movimento" e Novembro Azul, somadas à rotina de imunização na UBS Lambari, UBS Jardim Dulce e CESAP Nogueira.
-- **Santa Isabel:** calendário vacinal municipal 2026/2027 ativo, preparação do Novembro Azul nas UBSs e orientações recentes sobre conferência presencial da caderneta vacinal.
-- **Biritiba Mirim:** rotina de vacinação no CSIII (Jardim Takebe) e unidades ESF, além do aviso recente sobre manutenção/suspensão temporária na sala de vacina da ESF Jardim Yoneda.
-- **Salesópolis:** vacinação de rotina nas UBSs Centro e Nossa Sra. do Remédio, consulta ao itinerário estadual das Carretas da Mamografia (Mulheres de Peito) e emissão digital via VaciVida / Meu SUS Digital.
+- **Mogi das Cruzes:** ações previstas para o **Dezembro Vermelho** (testes rápidos no CTA, UBSs e UNICA) e **Operação Verão contra a Dengue**; **Novembro Azul** e salas de vacinação em andamento; e registro dos mutirões realizados no **Outubro Rosa** (24/10) e **Setembro Amarelo** (CAPS).
+- **Suzano:** programação do **Dia D do Novembro Azul**, **Dezembro Vermelho** e **Operação Verão Sem Dengue**; coleta ativa de PSA e salas de vacinação nas 24 UBSs/USFs; e balanço das ações concluídas do **Outubro Rosa**.
+- **Itaquaquecetuba:** **Plano Verão 2026/2027 de combate às arboviroses** e **Dezembro Vermelho**; **Resgate vacinal contra HPV (15 a 19 anos)** vigente até 31 de dezembro de 2026 e **Novembro Azul** ativo nas UBSs; além dos mutirões femininos realizados em outubro.
+- **Arujá:** campanha **Dezembro Vermelho & Laranja** (prevenção às ISTs e ao câncer de pele); mutirões descentralizados do **Novembro Azul** nas USFs; e registro da corrida e caminhada **Corre por Elas** realizada em 17 de outubro de 2026.
+- **Poá:** previsão de **Tenda da Saúde e multivacinação na Praça da Bíblia**; ações do **Novembro Azul** nas UBSs; e encerramento do **Corujão da Saúde da Mulher** (atendimento noturno realizado até 31/10).
+- **Ferraz de Vasconcelos:** campanha **Férias Sem Dengue** e **Dezembro Vermelho**; triagem masculina do **Novembro Azul** e **vacinação antirrábica** permanente na Clínica Veterinária Municipal; e histórico do **Dia D de Multivacinação e Resgate HPV**.
+- **Guararema:** novas etapas itinerantes do **"Vacina em Movimento"** e **Dezembro Vermelho**; **Novembro Azul** e imunização de rotina na UBS Lambari, UBS Jardim Dulce e CESAP Nogueira; e ações concluídas do **Outubro Rosa**.
+- **Santa Isabel:** **Mutirão Pré-Verão contra a dengue** e **Dezembro Vermelho**; **Novembro Azul** e **Calendário Vacinal Municipal 2026/2027** em andamento; e conferência pós-Dia D de cadernetas vacinais e Outubro Rosa.
+- **Biritiba Mirim:** mobilização do **Dezembro Vermelho** e revisão vacinal de fim de ano; atendimento do **Novembro Azul** e vacinação no CSIII (Jardim Takebe) e unidades ESF; além do comunicado de manutenção na ESF Jardim Yoneda.
+- **Salesópolis:** **Operação Verão** de prevenção à dengue e febre maculosa nos bairros; **Novembro Azul**, vacinação nas UBSs Centro e N. Sra. do Remédio e consulta às Carretas da Saúde; além da emissão digital via VaciVida / Meu SUS Digital e Outubro Rosa.
 
-> *Nota:* As informações foram levantadas a partir de canais oficiais e prefeituras. Programações, horários e disponibilidade podem sofrer alterações municipais; confirme detalhes sempre nas unidades e canais governamentais antes de se deslocar.
+> *Nota:* Informações atualizadas em **09 de novembro de 2026** a partir de canais oficiais e prefeituras. Programações, horários e disponibilidade podem sofrer alterações municipais; confirme detalhes sempre nas unidades e canais governamentais antes de se deslocar.
 
 ---
 
